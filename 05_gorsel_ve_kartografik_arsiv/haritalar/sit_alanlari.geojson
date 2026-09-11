@@ -1,0 +1,182 @@
+{
+  "type": "FeatureCollection",
+  "name": "Kaman_ve_Cevresi_Sit_Alanlari_ve_Tarihi_Mekanlar",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [33.7236, 39.3582]
+      },
+      "properties": {
+        "id": "SIT-01",
+        "name": "Kaman-Kalehöyük",
+        "category": "Arkeolojik Sit",
+        "period": "Erken Tunç - Osmanlı (MÖ 2800 - MS 17. yy)",
+        "elevation_m": 1015,
+        "status": "1. Derece Arkeolojik Sit",
+        "description": "Japon Anadolu Arkeoloji Enstitüsü (JIAA) tarafından 1986'dan beri kesintisiz kazılan stratigrafik referans höyük.",
+        "village": "Çağırkan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [33.7258, 39.3595]
+      },
+      "properties": {
+        "id": "SIT-02",
+        "name": "Mikasanomiya Anı Bahçesi (Japon Bahçesi)",
+        "category": "Peyzaj ve Kültür Varlığı",
+        "period": "Cumhuriyet Dönemi (1993-2010)",
+        "elevation_m": 1020,
+        "status": "Tescilli Park ve Anı Bahçesi",
+        "description": "Altes Prens Takahito Mikasa anısına kurulan, Japonya dışındaki en büyük Japon gezinti bahçelerinden biri.",
+        "village": "Çağırkan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [33.7242, 39.3588]
+      },
+      "properties": {
+        "id": "SIT-03",
+        "name": "Kaman Kalehöyük Arkeoloji Müzesi",
+        "category": "Müze Yapısı",
+        "period": "Modern (2010)",
+        "elevation_m": 1018,
+        "status": "T.C. Kültür ve Turizm Bakanlığı İhtisas Müzesi",
+        "description": "Höyük mimarisinde inşa edilmiş yeşil çatılı uluslararası standartta arkeoloji müzesi.",
+        "village": "Çağırkan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [33.4385, 39.6012]
+      },
+      "properties": {
+        "id": "SIT-04",
+        "name": "Büklükale",
+        "category": "Arkeolojik Sit / Garnizon",
+        "period": "Hitit İmparatorluğu - Demir Çağı (MÖ 2000 - 600)",
+        "elevation_m": 820,
+        "status": "1. Derece Arkeolojik Sit",
+        "description": "Kızılırmak nehir geçidini (Çeşnigir Boğazı) denetleyen stratejik Hitit idari merkezi ve kalesi.",
+        "village": "Köprüköy / Karakeçili Sınırı"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [33.7012, 39.2945]
+      },
+      "properties": {
+        "id": "SIT-05",
+        "name": "Yassıhöyük",
+        "category": "Arkeolojik Sit",
+        "period": "Erken Tunç - Frig / Demir Çağı",
+        "elevation_m": 980,
+        "status": "1. Derece Arkeolojik Sit",
+        "description": "Kaman güney tarımsal havzasını ve Savcılı vadisi girişini kontrol eden geniş höyük yerleşimi.",
+        "village": "Yassıhöyük"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [33.8214, 39.4125]
+      },
+      "properties": {
+        "id": "SIT-06",
+        "name": "Baranlı Dağı Zirvesi ve Gözetleme Kulesi Kalıntıları",
+        "category": "Doğal Sit ve Arkeolojik Alan",
+        "period": "Klasik Çağlar - Ortaçağ",
+        "elevation_m": 1677,
+        "status": "Doğal Sit Alanı",
+        "description": "Kaman havzasının en yüksek plütonik kütlesi; yangın kulesi ve antik sinyal/gözetleme mevki.",
+        "village": "Baranlı"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [33.5823, 39.2456]
+      },
+      "properties": {
+        "id": "SIT-07",
+        "name": "Savcılı Büyükoba ve Hirfanlı Sahil Kuşağı",
+        "category": "Ekolojik ve Rekreasyon Alanı",
+        "period": "Osmanlı - Günümüz",
+        "elevation_m": 860,
+        "status": "Turizm ve Koruma Sahası",
+        "description": "Hirfanlı Baraj Gölü kıyısında yer alan, mikroklima etkisiyle bağcılık ve meyveciliğin geliştiği koy.",
+        "village": "Savcılı Büyükoba"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [33.7845, 39.3890]
+      },
+      "properties": {
+        "id": "SIT-08",
+        "name": "Kargın Meşesi Tümülüsleri",
+        "category": "Arkeolojik Sit / Nekropol",
+        "period": "Demir Çağı / Frig - Helenistik",
+        "elevation_m": 1130,
+        "status": "1. Derece Arkeolojik Sit",
+        "description": "Baranlı Dağı eteklerinde yerel aristokratlara ait yığma mezar tepeleri.",
+        "village": "Kargın Meşesi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [33.7180, 39.3560]
+      },
+      "properties": {
+        "id": "SIT-09",
+        "name": "Çağırkan Baba Türbesi ve Zaviyesi Kalıntısı",
+        "category": "Dini / Tarihi Anıt",
+        "period": "Selçuklu - Erken Osmanlı (14. yy)",
+        "elevation_m": 1025,
+        "status": "Taşınmaz Kültür Varlığı",
+        "description": "Horasan erenlerinden kabul edilen Çağırkan Baba adına kurulan zaviye ve türbe sahası.",
+        "village": "Çağırkan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [33.7210, 39.3620]
+      },
+      "properties": {
+        "id": "SIT-10",
+        "name": "Ömerhacılı Höyüğü",
+        "category": "Arkeolojik Sit",
+        "period": "Tunç Çağı - Roma",
+        "elevation_m": 995,
+        "status": "1. Derece Arkeolojik Sit",
+        "description": "Kaman'ın kuzeybatı tarım kuşağında konumlanan yerleşim höyüğü.",
+        "village": "Ömerhacılı"
+      }
+    }
+  ]
+}

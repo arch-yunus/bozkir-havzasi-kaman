@@ -1,5 +1,7 @@
 # Bozkır Havzası Kaman: Arkeoloji, Coğrafya ve Yerel Hafıza Monografisi
 
+![Kaman-Kalehöyük Kazı Alanı ve Bozkır Stratigrafisi Banner](assets/banners/01_banner_kaman_kalehoyuk.jpg)
+
 > *"Anadolu'nun bağrında kazdığımız her tabaka, sadece toprağın değil; Doğu ile Batı'nın, kadim krallıkların ve göç yollarının kesiştiği insanlık hafızasının katmanlarıdır. Kalehöyük, bozkırın ortasında bin yıllar boyunca sönmemiş bir ocaktır."*  
 > — **Dr. Sachihiro Omura**, *Japon Anadolu Arkeoloji Enstitüsü (JIAA) Kazı Günlükleri*
 
@@ -15,6 +17,8 @@ Erken Tunç Çağı'ndan Demir Çağı'na, Hitit çekirdek bölgesinden Selçukl
 ## 📜 Tematik Alıntılar ve Hafıza Fragmanları
 
 ### I. Kazma, Çapa ve Stratigrafi: Toprağın Katmanları
+
+![Mikasanomiya Anı Bahçesi ve Enstitü Yerleşkesi](assets/banners/02_banner_mikasanomiya_japon_bahcesi.jpg)
 
 > *"Bozkırın sessizliği aldatıcıdır. Rüzgârın sürüklediği tozun birkaç metre altında; Hitit mühürleri, Asur ticaret kolonilerinin kervan tabletleri ve Demir Çağı'nın yanmış sur duvarları yan yana uyur."*  
 > — *Anatolian Archaeological Studies (JIAA Saha Notları)*
@@ -44,6 +48,8 @@ Erken Tunç Çağı'ndan Demir Çağı'na, Hitit çekirdek bölgesinden Selçukl
 
 ### II. Ozanlar Ocağı, Bozlak ve Abdal Nefesi
 
+![Kırşehir-Kaman Abdal Geleneği ve Bozlak Kültürü](assets/banners/04_banner_kirsehir_abdal_bozlak.jpg)
+
 > *"Bizim sazımızın teli bozkırın kuru otuna benzer; dokunsan yanar, dokunmasan rüzgârda inler. Biz insanı insan biliriz, bu toprak bizi sazımızla bildi."*  
 > — *Kırşehir-Kaman Abdal Havzası Sözlü Mülakatları*
 
@@ -68,12 +74,11 @@ Erken Tunç Çağı'ndan Demir Çağı'na, Hitit çekirdek bölgesinden Selçukl
 > *"Âşık Said der ki çağlar gözlerim / Yârdan ayrılalı dinmez sızılarım / Bozkırın bağrında kaldı izlerim / Kaman'ın yoluna düştüm ağlarım..."*  
 > — **Âşık Said**, *Kırşehir-Kaman Divânı*
 
-> *"Bağlamanın göğsüne vurulan her parmak darbesi, atlarımızın nalları altında inleyen toprak zeminidir. Biz ritmi metronomdan değil, yaylaya koşan sürünün adımından öğrendik."*  
-> — *Hacı Taşan Sözlü Kaydı*
-
 ---
 
 ### III. Bozkır Ekolojisi, Sert Ayaz ve Kaman Ağacı
+
+![Kaman Ceviz Bahçeleri ve Baranlı Dağı Silueti](assets/banners/03_banner_kaman_ceviz_ve_baranli.jpg)
 
 > *"Kaman’ın taşı sert, suyu kıt lakin cevizi cömerttir. İnce kabuğun ardındaki o ak meyve, bozkırın çorak ayazına inat toprağın derinlerinden emilen sabrın mahsulüdür."*  
 > — *Kaman Yerel Monografi Derlemesi*
@@ -93,12 +98,11 @@ Erken Tunç Çağı'ndan Demir Çağı'na, Hitit çekirdek bölgesinden Selçukl
 > *"Geven dediğin kuru bir diken yumağı sanılır; oysa toprağı tırnaklarıyla tutan odur. Gevenin söküldüğü yerde rüzgâr tarlayı sıyırır götürür."*  
 > — *Bozkır Erozyon ve Toprak İncelemeleri*
 
-> *"Savcılı koyundan esen yel, Hirfanlı'nın kokusunu getirir. Bozkırın ortasında deniz havası solumak istersen Savcılı'nın bağlarına varacaksın."*  
-> — *Kızılırmak Kıyısı Seyahat Notları*
-
 ---
 
-### IV. Göç Yolları, Türkmen İskânı ve Fermanlar
+### IV. Kızılırmak Havzası, Hirfanlı Sahili ve İskân Hatları
+
+![Hirfanlı Baraj Gölü ve Savcılı Koyu](assets/banners/05_banner_hirfanli_kizilirmak_havzasi.jpg)
 
 > *"Hükm-i şerîf sâdır olmuşdur ki: Bozok ve Kırşehri sancağında perakende olan cemaatler ve taifeler, zikrolunan Kaman ve tevabii yaylaklarında ve kışlaklarında sakin olup nizam üzere ziraat ve hıraset ile meşgul olalar..."*  
 > — *Başbakanlık Osmanlı Arşivi, Mühimme Defteri (17. Yüzyıl İskân Kaydı)*
@@ -112,40 +116,8 @@ Erken Tunç Çağı'ndan Demir Çağı'na, Hitit çekirdek bölgesinden Selçukl
 > *"Kızılırmak dolanır gelir, Kırşehir'in böğrünü yalar geçer. Kaman sırtlarından ovaya bakan süvari, bin yıl önce hangi suyu gözlediyse Türkmen obası da o pınarın başına otağ kurmuştur."*  
 > — *Seyyah Notları ve Yerel Risale*
 
-> *"Danişmendli oymakları Kaman sahrasını kışlak, Baranlı dağını yaylak ittihaz etmişlerdir. Yaylaya çıkış düğün, iniş ise ambarların dolduğu şenlik vaktidir."*  
-> — **Cevat Hakkı Tarım**, *Kırşehir Tarihi Üzerine Araştırmalar*
-
-> *"Mamalu Türkmenleri gayet cesur ve cengâver olup develeri ve sürüleriyle Kaman nahiyesini şenlendirmişler; harabe köyleri mamur eylemişlerdir."*  
-> — *18. Yüzyıl Divan-ı Hümayun İskân Raporu*
-
----
-
-### V. Millî Mücadele, Mustafa Kemal Paşa ve Ankara Hattı
-
-> *"25 Kânunuevvel 1919 sabahı Kırşehir'den Kaman'a müteveccihen hareket olundu. Kaman ahalisi ve civar köylerden gelen atlı seğmenler, soğuk ayaza aldırmaksızın heyetimizi kasaba girişinde samimi bir muhabbet ve sadakatle istikbal ettiler."*  
-> — **Mazhar Müfit Kansu**, *Erzurum'dan Ölümüne Kadar Atatürk'le Beraber*
-
-> *"Kaman Telgrafhanesi'nden Ankara'ya ve İstanbul'a çekilen teller, milletin kendi kaderini kendi eline aldığının bozkırdan yükselen şahididir. Kaman halkı ekmeğini ve atını Kuvâ-yı Millîye ile bölüşmüştür."*  
-> — *Millî Mücadele Kırşehir-Kaman Müdafaa-i Hukuk Arşivi*
-
-> *"Mustafa Kemal Paşa Kaman'da Bekirzade Osman Efendi'nin konağında istirahat buyururken buyurdular ki: 'Bu aziz millet esareti asla kabul etmeyecektir. Bozkırın bağrında parlayan bu inanç meşalesi Ankara'da bütün vatanı aydınlatacaktır.'"*  
-> — *Yerel Sözlü Tarih ve Gazi Hatıratı*
-
-> *"Kaman gençleri kağnı kollarının başında, mermiyi sırtında taşıyarak Sakarya siperlerine yetiştirdi. Bu dağların her çeşmesi bir şehit anısına akar."*  
-> — *Kaman Müdafaa-i Hukuk Heyeti Raporu*
-
----
-
-### VI. Seyyahların Gözüyle Kaman ve Bozkır Yolları
-
-> *"Kırşehir'den batıya doğru dört saatlik mesafede Kaman nam mevkiye vardık. Havası gayet letafetli, suyu leziz, ceviz ağaçları pek meşhurdur. Ahalisi Türkmen olup misafirperverlikte emsalsizdir."*  
-> — **Evliya Çelebi**, *Seyahatnâme (17. Yüzyıl)*
-
-> *"Baranlı Dağı'nın etekleri boyunca uzanan vadilerde geniş ceviz korulukları ve bağlar yer alır. Toprak kireçli olmakla beraber buğday ve meyve ziraatine son derece elverişlidir."*  
-> — **William John Hamilton**, *Researches in Asia Minor, Pontus, and Armenia (1842)*
-
-> *"Kaman platosu, İç Anadolu'nun en eski kavşak noktalarından biridir. Yassıhöyük ve Kalehöyük gibi muazzam tepe yerleşimleri, bu sahanın antik çağlarda ne denli yoğun bir nüfusa ev sahipliği yaptığını göstermektedir."*  
-> — **Heinrich Kiepert**, *Orta Anadolu Coğrafya Raporları (1890)*
+> *"Savcılı koyundan esen yel, Hirfanlı'nın kokusunu getirir. Bozkırın ortasında deniz havası solumak istersen Savcılı'nın bağlarına varacaksın."*  
+> — *Kızılırmak Kıyısı Seyahat Notları*
 
 ---
 
@@ -197,9 +169,11 @@ bozkir-havzasi-kaman/
 ├── 05_gorsel_ve_kartografik_arsiv/
 │   ├── haritalar/                           # Kiepert haritaları, Harita Umum Müdürlüğü paftaları, GIS
 │   │   ├── README.md                        # Kartografik kaynaklar ve GIS metodolojisi
-│   │   └── sit_alanlari.geojson             # Koordinatlandırılmış höyük, anıt ve köy ağları (25+ nokta)
+│   │   └── sit_alanlari.geojson             # Koordinatlandırılmış höyük, anıt ve köy ağları (20 nokta)
 │   └── fotograflar/                         # Eski Kaman fotoğrafları, kazı alanı tarihi kareleri
 │       └── README.md                        # Görsel arşiv metaveri şablonu
+├── assets/
+│   └── banners/                             # Yüksek çözünürlüklü tematik monografi bannerları (5 adet)
 ├── docs/                                    # Raporlar, transkriptler ve ham veri metinleri
 │   ├── kronoloji_cetveli.md                 # MÖ 2800'den günümüze karşılaştırmalı matris
 │   ├── ceviz_yetistiriciligi_rehberi.md     # Kaman cevizi agronomik bakım ve don koruma rehberi

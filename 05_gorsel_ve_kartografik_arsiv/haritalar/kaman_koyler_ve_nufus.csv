@@ -1,0 +1,21 @@
+id,name,category,boy_origin,elevation_m,latitude,longitude,primary_product,historic_notes
+KMN-01,Kaman Merkez,İlçe Merkezi,Oğuz / Kınık-Avşar,1015,39.3582,33.7236,Ceviz / Ticaret / İdari,Tarihi pazar yeri ve 1919 Atatürk karşılama mevkii
+KMN-02,Çağırkan,Köy,Horasan Derviş Zaviyesi,1020,39.3595,33.7258,Ceviz / Kültür Turizmi,Kalehöyük kazıları ve Mikasanomiya bahçesi
+KMN-03,Savcılı Büyükoba,Köy,Savcı Türkmen Oymağı,880,39.2456,33.5823,Bağcılık / Pekmez / Balıkçılık,Hirfanlı baraj gölü sahil koyu
+KMN-04,Savcılı Bağbaşı,Köy,Savcı Türkmen Oymağı,870,39.2150,33.5640,Üzüm / Pekmez / Köftür,Geleneksel yamaç bağ terasları
+KMN-05,Kargın Meşesi,Köy,Kargın Boyu,1150,39.3890,33.7845,Hayvancılık / Kuru Tarım,Baranlı dağı etekleri ve Demir Çağı tümülüsleri
+KMN-06,Ömerhacılı,Köy,Mamalu / Oymak Beyi,990,39.3620,33.7210,Hububat / Bakliyat / Ceviz,Höyük yerleşimi ve 16. yy tahrir kaydı
+KMN-07,Kurancılı,Belde,Türkmen İskânı,1080,39.4210,33.7530,Hububat / Hayvancılık,Baranlı etekleri tarihi yerleşimi
+KMN-08,Bayındır,Köy,Bayındır Boyu,1030,39.3850,33.6120,Buğday / Arpa / Ceviz,Oğuzların Bayındır boyunun adını taşır
+KMN-09,Çadırlıhacıbayram,Köy,Konar-Göçer Türkmen,960,39.3210,33.6420,Hayvancılık / Kuru Tarım,Tarihi Osmanlı çeşmesi ve yerleşik oba
+KMN-10,Çadırlıkörmehmet,Köy,Konar-Göçer Türkmen,970,39.3320,33.6540,Küçükbaş / Arpa,18. yy zorunlu iskân köyü
+KMN-11,Demirli,Köy,Türkmen Oymağı,1050,39.4600,33.6300,Ceviz / Değirmencilik,Tarihi Değirmendere su değirmenleri
+KMN-12,Tatık,Köy,Oymak Beyi,1110,39.4420,33.6890,Kuru Tarım / Hayvancılık,Tüf kaya oyma Bizans yerleşimleri
+KMN-13,İkizler,Köy,Türkmen Oymağı,990,39.3120,33.7910,Buğday / Nohut,İkiz höyük yerleşimi
+KMN-14,Hirfanlı,Köy,Kızılırmak Boyu,850,39.2710,33.5210,Balıkçılık / Enerji,Hirfanlı Barajı HES gövdesi
+KMN-15,Benzer,Köy,Dulkadirli / Cerid,890,39.2600,33.5500,Ceviz / Sebze / Üzüm,Kızılırmak vadisi ılıman mikroklima
+KMN-16,Meşeköy,Köy,Danişmendli,920,39.2800,33.5700,Bağcılık / Ceviz,Tarihi meşe korulukları
+KMN-17,Yassıhöyük,Köy,Antik İskân,980,39.2945,33.7012,Buğday / Ceviz,Bölgesel Demir Çağı höyüğü
+KMN-18,Baranlı,Köy,Dağ Eteği İskânı,1200,39.4125,33.8214,Küçükbaş Hayvancılık / Geven Balı,Baranlı zirvesi gözetleme noktası
+KMN-19,Karakaya,Köy,Bozok Türkmenleri,1040,39.3700,33.6800,Hububat / Hayvancılık,Bazalt kayalık mevkii
+KMN-20,Yeniyapan,Köy,Cumhuriyet İmarı,1000,39.3400,33.7400,Ceviz / Buğday,İmar edilen tarımsal köy

@@ -8,7 +8,7 @@
 > *"Toprak dedikleri kuru bir çamur yığını değildir; altı bin yıllık ocakların külü, üstü sayısız kavmin fırtınasıdır. Kaman dediğin yer, rüzgârın kervan yoluna fısıldadığı o kesintisiz türküdür."*  
 > — *Kırşehir Monografi ve Halk Bilimi Notları*
 
-Bu araştırma külliyatı ve açık kaynak veri deposu; Orta Anadolu yaylasının stratejik kavşağında yer alan **Kırşehir / Kaman** mikro-havzasını arkeolojik, tarihsel, ekolojik, dilbilimsel ve folklorik katmanlarıyla bir bütün olarak ele almaktadır. 
+Bu araştırma külliyatı ve açık kaynak veri deposu; Orta Anadolu yaylasının stratejik kavşağında yer alan **Kırşehir / Kaman** mikro-havzasını arkeolojik, tarihsel, ekolojik, dilbilimsel, sosyolojik ve folklorik katmanlarıyla bir bütün olarak ele almaktadır. 
 
 Erken Tunç Çağı'ndan Demir Çağı'na, Hitit çekirdek bölgesinden Selçuklu-Osmanlı iskân hareketlerine, Millî Mücadele'nin Heyet-i Temsiliye intikal hattından Abdal/bozlak hafızasına uzanan bu monografi; Kaman'ı salt bir idari sınır olarak değil, Kızılırmak kavisinde şekillenmiş dinamik ve kadim bir **"Bozkır Havzası"** olarak modeller.
 
@@ -142,44 +142,54 @@ Erken Tunç Çağı'ndan Demir Çağı'na, Hitit çekirdek bölgesinden Selçukl
 ```text
 bozkir-havzasi-kaman/
 ├── 01_arkeoloji_ve_kazilar/
-│   ├── 01_kalehoyuk_stratigrafi.md          # Tabakalanma, seramik tipolojisi, mimari evreler
-│   ├── 02_jiaa_enstitu_tarihcesi.md         # Enstitünün kuruluşu, Prens Mikasa ve Omura arşivi
-│   ├── 03_buklukale_ve_yassihoyuk.md        # Bölgesel höyük sistemleri ve nehir geçitleri
-│   ├── 04_arkeometrik_veriler.md            # Radyokarbon (C14), botanik ve osteoloji tahlilleri
-│   ├── 05_japon_bahcesi_ekolojisi.md        # Mikasanomiya anı bahçesi ve peyzaj mimarisi
-│   └── 06_muze_katalogu_ve_secme_eserler.md # Kaman Kalehöyük Arkeoloji Müzesi seçme eserler envanteri
+│   ├── 01_kalehoyuk_stratigrafi.md              # Tabakalanma, seramik tipolojisi, mimari evreler
+│   ├── 02_jiaa_enstitu_tarihcesi.md             # Enstitünün kuruluşu, Prens Mikasa ve Omura arşivi
+│   ├── 03_buklukale_ve_yassihoyuk.md            # Bölgesel höyük sistemleri ve nehir geçitleri
+│   ├── 04_arkeometrik_veriler.md                # Radyokarbon (C14), botanik ve osteoloji tahlilleri
+│   ├── 05_japon_bahcesi_ekolojisi.md            # Mikasanomiya anı bahçesi ve peyzaj mimarisi
+│   ├── 06_muze_katalogu_ve_secme_eserler.md     # Kaman Kalehöyük Arkeoloji Müzesi seçme eserler envanteri
+│   └── 07_kalehoyuk_maden_ve_demir_cagi_metalurjisi.md # Tunç ve demir fırınları, cüruf ve çelik metalurjisi
 ├── 02_cografya_ve_ekolojik_yapi/
-│   ├── 01_jeomorfoloji_ve_iklim.md          # Baranlı kütlesi, vadi tabanları, yağış rejimleri
-│   ├── 02_ceviz_botanigi_ve_tarim.md        # Kaman cevizi seleksiyonları ve toprak talepleri
-│   ├── 03_su_ve_kizilirmak_havzasi.md       # Akarsular, çeşmeler, göletler ve kuraklık verileri
-│   └── 04_endemik_flora_ve_step.md          # Geven, yavşan otu ve step vejetasyonu envanteri
+│   ├── 01_jeomorfoloji_ve_iklim.md              # Baranlı kütlesi, vadi tabanları, yağış rejimleri
+│   ├── 02_ceviz_botanigi_ve_tarim.md            # Kaman cevizi seleksiyonları ve toprak talepleri
+│   ├── 03_su_ve_kizilirmak_havzasi.md           # Akarsular, çeşmeler, göletler ve kuraklık verileri
+│   ├── 04_endemik_flora_ve_step.md              # Geven, yavşan otu ve step vejetasyonu envanteri
+│   └── 05_iklim_krizi_ve_havza_hidrolojisi.md   # Kuraklık indisleri (SPI/SPEI) ve yeraltı su krizi
 ├── 03_tarihsel_belgeler_ve_iskan/
-│   ├── 01_osmanli_tahrir_kayitlari.md       # 16. yy Bozok ve Kırşehir livası tahrir transkripsiyonları
-│   ├── 02_asiretler_ve_konar_gocer.md       # Türkmen boyları, cemaatler ve iskân fermanları
-│   ├── 03_vakfiyeler_ve_seriyye.md          # Cami, zaviye, medrese vakıf kayıtları ve mahkeme hüccetleri
-│   ├── 04_milli_mucadele_donemi.md          # Heyet-i Temsiliye'nin Kırşehir-Kaman temasları
-│   └── 05_seyyahlar_ve_salnameler.md        # Evliya Çelebi, Salnameler ve Batılı seyyah kayıtları
+│   ├── 01_osmanli_tahrir_kayitlari.md           # 16. yy Bozok ve Kırşehir livası tahrir transkripsiyonları
+│   ├── 02_asiretler_ve_konar_gocer.md           # Türkmen boyları, cemaatler ve iskân fermanları
+│   ├── 03_vakfiyeler_ve_seriyye.md              # Cami, zaviye, medrese vakıf kayıtları ve mahkeme hüccetleri
+│   ├── 04_milli_mucadele_donemi.md              # Heyet-i Temsiliye'nin Kırşehir-Kaman temasları
+│   ├── 05_seyyahlar_ve_salnameler.md            # Evliya Çelebi, Salnameler ve Batılı seyyah kayıtları
+│   └── 06_kaman_nufus_defterleri_1831_1845.md   # 1831 Nüfus ve 1845 Temettuat hane gelirleri envanteri
 ├── 04_folklor_ve_sozlu_bellek/
-│   ├── 01_bozlak_ve_muzik_antropolojisi.md  # Abdal geleneği, perde düzenleri, ezgi kalıpları
-│   ├── 02_toponimi_ve_koy_monografileri.md  # Köy adlarının morfolojik ve tarihsel kökeni
-│   ├── 03_yerel_sozluk_ve_atasozleri.md     # Kaman ağzı derlemeleri ve arkaik Türkçe kelimeler
-│   ├── 04_agitlar_ve_destanlar.md           # Bölgesel ağıtlar, düğün adetleri ve seyirlik oyunlar
-│   ├── 05_kaman_divani_ve_siir_antolojisi.md# Kaman, Baranlı ve Bozlak şiir antolojisi
-│   └── 06_kaman_mutfagi_ve_gastronomi.md    # Geleneksel yemekler, cevizli çörek ve bağcılık mutfağı
+│   ├── 01_bozlak_ve_muzik_antropolojisi.md      # Abdal geleneği, perde düzenleri, ezgi kalıpları
+│   ├── 02_toponimi_ve_koy_monografileri.md      # Köy adlarının morfolojik ve tarihsel kökeni
+│   ├── 03_yerel_sozluk_ve_atasozleri.md         # Kaman ağzı derlemeleri ve arkaik Türkçe kelimeler
+│   ├── 04_agitlar_ve_destanlar.md               # Bölgesel ağıtlar, düğün adetleri ve seyirlik oyunlar
+│   ├── 05_kaman_divani_ve_siir_antolojisi.md    # Kaman, Baranlı ve Bozlak şiir antolojisi
+│   ├── 06_kaman_mutfagi_ve_gastronomi.md        # Geleneksel yemekler, cevizli çörek ve bağcılık mutfağı
+│   └── 07_halk_hekimligi_ve_etnobotanik.md      # Şifalı step bitkileri, ocaklık ve sınıkçılık geleneği
 ├── 05_gorsel_ve_kartografik_arsiv/
-│   ├── haritalar/                           # Kiepert haritaları, Harita Umum Müdürlüğü paftaları, GIS
-│   │   ├── README.md                        # Kartografik kaynaklar ve GIS metodolojisi
-│   │   └── sit_alanlari.geojson             # Koordinatlandırılmış höyük, anıt ve köy ağları (20 nokta)
-│   └── fotograflar/                         # Eski Kaman fotoğrafları, kazı alanı tarihi kareleri
-│       └── README.md                        # Görsel arşiv metaveri şablonu
+│   ├── haritalar/
+│   │   ├── README.md                            # Kartografik kaynaklar ve GIS metodolojisi
+│   │   ├── sit_alanlari.geojson                 # Koordinatlandırılmış höyük, anıt ve köy ağları (20 nokta)
+│   │   └── kaman_koyler_ve_nufus.csv            # 20 köyün rakım, boy kökeni ve ürün tabular veri seti
+│   └── fotograflar/
+│       └── README.md                            # Görsel arşiv metaveri şablonu
 ├── assets/
-│   └── banners/                             # Yüksek çözünürlüklü tematik monografi bannerları (5 adet)
-├── docs/                                    # Raporlar, transkriptler ve ham veri metinleri
-│   ├── kronoloji_cetveli.md                 # MÖ 2800'den günümüze karşılaştırmalı matris
-│   ├── ceviz_yetistiriciligi_rehberi.md     # Kaman cevizi agronomik bakım ve don koruma rehberi
-│   └── sozlu_tarih_mulakat_protokolu.md     # Saha çalışması mülakat soru setleri ve protokolü
-├── CONTRIBUTING.md                          # Veri ekleme, kaynak gösterme ve transkripsiyon kılavuzu
-├── BIBLIOGRAPHY.md                         # Kapsamlı bibliyografya ve kaynakça indeksi
+│   └── banners/                                 # Yüksek çözünürlüklü tematik monografi bannerları (5 adet)
+├── docs/
+│   ├── kronoloji_cetveli.md                     # MÖ 2800'den günümüze karşılaştırmalı matris
+│   ├── ceviz_yetistiriciligi_rehberi.md         # Kaman cevizi agronomik bakım ve don koruma rehberi
+│   ├── sozlu_tarih_mulakat_protokolu.md         # Saha çalışması mülakat soru setleri ve protokolü
+│   └── sociology/
+│       ├── kaman_ve_ag_kapitalizmi_analizi.md   # Bozkır sosyolojisi ile vadi tipi şebeke kapitalizmi analizi
+│       └── ahilik_ve_abdal_etik_matrisi.md      # Ahilik ve Abdal geleneği karşılaştırmalı etik matrisi
+├── scripts/
+│   └── analyze_kaman_data.py                    # GeoJSON & CSV mekânsal istatistik ve mesafe analiz aracı
+├── CONTRIBUTING.md                              # Veri ekleme, kaynak gösterme ve transkripsiyon kılavuzu
+├── BIBLIOGRAPHY.md                             # Kapsamlı bibliyografya ve kaynakça indeksi
 └── README.md
 ```
 

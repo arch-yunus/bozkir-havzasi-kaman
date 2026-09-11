@@ -1,6 +1,6 @@
 {
   "type": "FeatureCollection",
-  "name": "Kaman_ve_Cevresi_Sit_Alanlari_ve_Tarihi_Mekanlar",
+  "name": "Kaman_ve_Cevresi_Kapsamli_Sit_ve_Mekan_Envanteri",
   "crs": {
     "type": "name",
     "properties": {
@@ -10,10 +10,7 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [33.7236, 39.3582]
-      },
+      "geometry": { "type": "Point", "coordinates": [33.7236, 39.3582] },
       "properties": {
         "id": "SIT-01",
         "name": "Kaman-Kalehöyük",
@@ -21,16 +18,13 @@
         "period": "Erken Tunç - Osmanlı (MÖ 2800 - MS 17. yy)",
         "elevation_m": 1015,
         "status": "1. Derece Arkeolojik Sit",
-        "description": "Japon Anadolu Arkeoloji Enstitüsü (JIAA) tarafından 1986'dan beri kesintisiz kazılan stratigrafik referans höyük.",
+        "description": "Japon Anadolu Arkeoloji Enstitüsü (JIAA) tarafından 1986'dan beri kesintisiz kazılan stratigrafik merkez höyük.",
         "village": "Çağırkan"
       }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [33.7258, 39.3595]
-      },
+      "geometry": { "type": "Point", "coordinates": [33.7258, 39.3595] },
       "properties": {
         "id": "SIT-02",
         "name": "Mikasanomiya Anı Bahçesi (Japon Bahçesi)",
@@ -44,10 +38,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [33.7242, 39.3588]
-      },
+      "geometry": { "type": "Point", "coordinates": [33.7242, 39.3588] },
       "properties": {
         "id": "SIT-03",
         "name": "Kaman Kalehöyük Arkeoloji Müzesi",
@@ -61,10 +52,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [33.4385, 39.6012]
-      },
+      "geometry": { "type": "Point", "coordinates": [33.4385, 39.6012] },
       "properties": {
         "id": "SIT-04",
         "name": "Büklükale",
@@ -78,10 +66,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [33.7012, 39.2945]
-      },
+      "geometry": { "type": "Point", "coordinates": [33.7012, 39.2945] },
       "properties": {
         "id": "SIT-05",
         "name": "Yassıhöyük",
@@ -95,10 +80,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [33.8214, 39.4125]
-      },
+      "geometry": { "type": "Point", "coordinates": [33.8214, 39.4125] },
       "properties": {
         "id": "SIT-06",
         "name": "Baranlı Dağı Zirvesi ve Gözetleme Kulesi Kalıntıları",
@@ -112,10 +94,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [33.5823, 39.2456]
-      },
+      "geometry": { "type": "Point", "coordinates": [33.5823, 39.2456] },
       "properties": {
         "id": "SIT-07",
         "name": "Savcılı Büyükoba ve Hirfanlı Sahil Kuşağı",
@@ -129,10 +108,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [33.7845, 39.3890]
-      },
+      "geometry": { "type": "Point", "coordinates": [33.7845, 39.3890] },
       "properties": {
         "id": "SIT-08",
         "name": "Kargın Meşesi Tümülüsleri",
@@ -146,10 +122,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [33.7180, 39.3560]
-      },
+      "geometry": { "type": "Point", "coordinates": [33.7180, 39.3560] },
       "properties": {
         "id": "SIT-09",
         "name": "Çağırkan Baba Türbesi ve Zaviyesi Kalıntısı",
@@ -163,10 +136,7 @@
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [33.7210, 39.3620]
-      },
+      "geometry": { "type": "Point", "coordinates": [33.7210, 39.3620] },
       "properties": {
         "id": "SIT-10",
         "name": "Ömerhacılı Höyüğü",
@@ -176,6 +146,146 @@
         "status": "1. Derece Arkeolojik Sit",
         "description": "Kaman'ın kuzeybatı tarım kuşağında konumlanan yerleşim höyüğü.",
         "village": "Ömerhacılı"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [33.7175, 39.3552] },
+      "properties": {
+        "id": "SIT-11",
+        "name": "Kaman Tarihî Hükümet Konağı ve Çarşı Meydanı",
+        "category": "Kentsel Bellek / İdari",
+        "period": "Geç Osmanlı - Erken Cumhuriyet (1919)",
+        "elevation_m": 1005,
+        "status": "Kentsel Sit / Bellek Alanı",
+        "description": "Mustafa Kemal Paşa'nın 25 Aralık 1919'da seğmenler tarafından karşılandığı tarihî merkez.",
+        "village": "Kaman Merkez"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [33.6420, 39.3210] },
+      "properties": {
+        "id": "SIT-12",
+        "name": "Çadırlıhacıbayram Tarihî Köy Çeşmesi ve Yerleşimi",
+        "category": "Tarihî Yapı / İskân",
+        "period": "Osmanlı (18. yy)",
+        "elevation_m": 960,
+        "status": "Tescilli Çeşme Mimarisi",
+        "description": "Göçebe Türkmen obalarının yerleşik düzene geçişini simgeleyen tarihî çeşme ve cami.",
+        "village": "Çadırlıhacıbayram"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [33.7530, 39.4210] },
+      "properties": {
+        "id": "SIT-13",
+        "name": "Kurancılı Beldesi ve Antik Yerleşim İzleri",
+        "category": "Arkeolojik ve Tarihsel Alan",
+        "period": "Roma - Selçuklu - Osmanlı",
+        "elevation_m": 1080,
+        "status": "Tescilli İskân Alanı",
+        "description": "Baranlı eteklerinde eski su yolları ve kaya mezarları barındıran yerleşim.",
+        "village": "Kurancılı"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [33.5210, 39.2710] },
+      "properties": {
+        "id": "SIT-14",
+        "name": "Hirfanlı Barajı Gövdesi ve Hidroelektrik Santrali",
+        "category": "Endüstriyel Miras ve Su Yapısı",
+        "period": "Cumhuriyet (1953-1959)",
+        "elevation_m": 850,
+        "status": "Stratejik Su Yapısı",
+        "description": "İç Anadolu'nun hidrolojik ve mikroklimatik çehresini değiştiren anıtsal baraj gövdesi.",
+        "village": "Hirfanlı"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [33.6120, 39.3850] },
+      "properties": {
+        "id": "SIT-15",
+        "name": "Bayındır Köyü Tarihî İskân Alanı",
+        "category": "Tarihsel İskân",
+        "period": "Selçuklu - Osmanlı",
+        "elevation_m": 1030,
+        "status": "Geleneksel Kırsal Doku",
+        "description": "Oğuzların Bayındır boyunun adını taşıyan kadim yerleşim mevkii.",
+        "village": "Bayındır"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [33.6890, 39.4420] },
+      "properties": {
+        "id": "SIT-16",
+        "name": "Tatık Köyü Kaya Yerleşimleri ve Mağaralar",
+        "category": "Arkeolojik Sit",
+        "period": "Bizans - Erken Hristiyanlık",
+        "elevation_m": 1110,
+        "status": "Arkeolojik Alan",
+        "description": "Volkanik tüf kayalıklara oyulmuş kilise, şapel ve sığınak odaları.",
+        "village": "Tatık"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [33.5640, 39.2150] },
+      "properties": {
+        "id": "SIT-17",
+        "name": "Savcılı Bağbaşı Tarihî Bağ Sahası",
+        "category": "Tarımsal Miras",
+        "period": "Antik Çağ - Günümüz",
+        "elevation_m": 870,
+        "status": "Geleneksel Bağ Alanı",
+        "description": "Savcılı üzümü, pekmez ve köftür üretiminin merkezi olan tarihî yamaç terasları.",
+        "village": "Savcılı Bağbaşı"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [33.7910, 39.3120] },
+      "properties": {
+        "id": "SIT-18",
+        "name": "İkizler Höyüğü",
+        "category": "Arkeolojik Sit",
+        "period": "Tunç Çağı",
+        "elevation_m": 990,
+        "status": "1. Derece Arkeolojik Sit",
+        "description": "Kaman'ın güneydoğusunda yer alan çift tepeli höyük formasyonu.",
+        "village": "İkizler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [33.7050, 39.3750] },
+      "properties": {
+        "id": "SIT-19",
+        "name": "Kaman Merkez Ceviz Araştırma ve Islah İstasyonu",
+        "category": "Agronomik Araştırma Alanı",
+        "period": "1975 - Günümüz",
+        "elevation_m": 1010,
+        "status": "Tarımsal Gen Bankası Sahası",
+        "description": "Kaman 1-5 tescilli ceviz genotiplerinin anaçlarının muhafaza edildiği seleksiyon parseli.",
+        "village": "Kaman Merkez"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [33.6300, 39.4600] },
+      "properties": {
+        "id": "SIT-20",
+        "name": "Demirli Köyü Su Değirmenleri Mevkii",
+        "category": "Kültür Varlığı",
+        "period": "Osmanlı (19. yy)",
+        "elevation_m": 1050,
+        "status": "Taşınmaz Kültür Varlığı",
+        "description": "Şer'iyye sicillerinde adı geçen tarihi su değirmenleri kalıntıları.",
+        "village": "Demirli"
       }
     }
   ]

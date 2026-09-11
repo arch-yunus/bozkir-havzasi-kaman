@@ -22,16 +22,20 @@ Bu bibliyografya; Kaman ve Orta Kızılırmak / Bozkır Havzası üzerine yapıl
 
 ---
 
-## 2. Tarih, İskân, Arşiv Belgeleri ve Sosyoloji
+## 2. Tarih, İskân, Arşiv Belgeleri, Seyahatnameler ve Salnameler
 
+* **Ankara Vilayeti Salnameleri (1870–1908):** H. 1288, 1300, 1310, 1325 tarihli Kırşehir Sancağı ve Kaman Nahiyesi Resmi Salnameleri.
 * **Başbakanlık Osmanlı Arşivi (BOA):**
   * *Tapu Tahrir Defterleri (TD):* TD 139 (935/1528 Kırşehri Livası), TD 998 (16. Yüzyıl Bozok Sancağı İcmal Defteri), TD 415 (Kırşehir ve Çorum Tahrirleri).
-  * *Mühimme Defterleri:* 7 Nolu Mühimme (H. 975–976 / M. 1567–1568 Bozok İskân Fermanları), 12 Nolu Mühimme (Mamalu ve Danişmendli Aşiretleri Hükümleri).
+  * *Mühimme Defterleri:* 7 Nolu Mühimme (H. 975–976 / M. 1567–1568 Bozok İskân Fermanları), 12 Nolu Mühimme (Mamalu ve Danişmendli Aşiretleri Hükümleri), 111 Nolu Mühimme (H. 1113 / M. 1701 Kaman Nahiyesi Zorunlu İskân Fermanı).
   * *Maliyeden Müdevver Defterler (MAD.d):* Kırşehir Mukataaları ve Voyvodalık Kayıtları.
 * **Cevdet, Muallim.** (1937). *Osmanlı İmparatorluğunda İskân Siyaseti ve Boy Teşkilatı*. İstanbul: Devlet Matbaası.
 * **Dulkadir, Hilmi.** (1997). *İç Anadolu'da Türkmen Aşiretleri ve Kırşehir Havzası*. Ankara: T.C. Kültür Bakanlığı HAGEM Yayınları.
+* **Evliya Çelebi.** (Günümüz Türkçesi: Seyit Ali Kahraman). *Evliya Çelebi Seyahatnâmesi (3. ve 5. Kitaplar)*. İstanbul: Yapı Kredi Yayınları.
 * **Gökbel, Ahmet.** (2007). *Kırşehir ve Çevresinde Abdallar: Sosyo-Kültürel Yapı ve Geleneksel Müzik*. Ankara: Berikan Yayınevi.
 * **Halaçoğlu, Yusuf.** (2009). *Anadolu'da Aşiretler, Cemaatler, Oymaklar (1453–1650)*. 6 Cilt. Ankara: Türk Tarih Kurumu Yayınları.
+* **Hamilton, William John.** (1842). *Researches in Asia Minor, Pontus, and Armenia; with Some Account of Their Antiquities and Geology*. London: John Murray.
+* **Kansu, Mazhar Müfit.** (1966). *Erzurum'dan Ölümüne Kadar Atatürk'le Beraber*. Ankara: Türk Tarih Kurumu Yayınları.
 * **Kırşehir Şer'iyye Sicilleri (KŞS):** Ankara Milli Kütüphane Arşivi, Defter No: 1, 2, 4 (18. ve 19. Yüzyıl Kaman, Çiçekdağı ve Mucur Mahkeme Hüccetleri).
 * **Kuran, Ercüment.** (1988). "Orta Anadolu'da Millî Mücadele ve Kırşehir-Kaman Müdafaa-i Hukuk Teşkilatlanması." *Atatürk Araştırma Merkezi Dergisi*, 4(12), s. 655–670.
 * **Sümer, Faruk.** (1999). *Oğuzlar (Türkmenler): Tarihleri, Boy Teşkilatı, Destanları*. 5. Baskı. İstanbul: Türk Dünyası Araştırmaları Vakfı.

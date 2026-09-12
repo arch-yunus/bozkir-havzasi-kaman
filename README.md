@@ -205,7 +205,7 @@ Açık kaynak CBS veri setimizde (`sit_alanlari.geojson` ve `kaman_koyler_ve_nuf
 
 ---
 
-## 📂 Dizin Yapısı ve Belge Mimarisi (30 Bölüm)
+## 📂 Dizin Yapısı ve Belge Mimarisi (33 Bölüm ve Rehber)
 
 ```text
 bozkir-havzasi-kaman/
@@ -232,7 +232,8 @@ bozkir-havzasi-kaman/
 │   ├── 04_milli_mucadele_donemi.md              # Heyet-i Temsiliye'nin Kırşehir-Kaman temasları
 │   ├── 05_seyyahlar_ve_salnameler.md            # Evliya Çelebi, Salnameler ve Batılı seyyah kayıtları
 │   ├── 06_kaman_nufus_defterleri_1831_1845.md   # 1831 Nüfus ve 1845 Temettuat hane gelirleri envanteri
-│   └── 07_ataturk_kaman_gunlugu_1919.md         # 24-25 Aralık 1919 Mustafa Kemal Paşa Kaman konaklaması
+│   ├── 07_ataturk_kaman_gunlugu_1919.md         # 24-25 Aralık 1919 Mustafa Kemal Paşa Kaman konaklaması
+│   └── 08_kaman_ve_cevre_koy_adlari_sozlugu.md  # Köy adları etimolojisi, Oğuz boyları ve tahrir indeksi
 ├── 04_folklor_ve_sozlu_bellek/
 │   ├── 01_bozlak_ve_muzik_antropolojisi.md      # Abdal geleneği, perde düzenleri, ezgi kalıpları
 │   ├── 02_toponimi_ve_koy_monografileri.md      # Köy adlarının morfolojik ve tarihsel kökeni
@@ -243,7 +244,9 @@ bozkir-havzasi-kaman/
 │   ├── 07_halk_hekimligi_ve_etnobotanik.md      # Şifalı step bitkileri, ocaklık ve sınıkçılık geleneği
 │   ├── 08_kaman_abdal_ocaklari_ve_muharrem_ertas.md # Muharrem Ertaş ekolü, soy kütükleri ve icra tavrı
 │   ├── 09_kaman_yetistirdigi_sahsiyetler_ve_biyografiler.md # Âşık Said, Seyfullah, Çelebi Cemalettin biyografileri
-│   └── 10_turk_edebiyatinda_kaman_ve_bozkir_metinleri.md # Tanpınar, Yaşar Kemal, Âşık Paşa, Bedri Rahmi edebiyat antolojisi
+│   ├── 10_turk_edebiyatinda_kaman_ve_bozkir_metinleri.md # Tanpınar, Yaşar Kemal, Âşık Paşa, Bedri Rahmi edebiyat antolojisi
+│   ├── 11_kaman_masallari_efsaneleri_ve_mitoloji.md # Gelin Kayası, Çağırkan Asa Pınarı ve Kırk Kızlar efsaneleri
+│   └── 12_cunkler_ve_el_yazmasi_siir_defterleri.md # 18-19. yy el yazması cönkler ve derkenar kayıtları
 ├── 05_gorsel_ve_kartografik_arsiv/
 │   ├── haritalar/
 │   │   ├── README.md                            # Kartografik kaynaklar ve GIS metodolojisi
@@ -263,6 +266,7 @@ bozkir-havzasi-kaman/
 │   └── banners/                                 # 7 adet yüksek çözünürlüklü tematik monografi bannerı
 ├── docs/
 │   ├── index.html                              # GitHub Pages için Web CBS Portalı
+│   ├── kaman_kultur_ve_turizm_gezi_rotalari.md # 1, 2 ve 3 günlük tematik gezi ve kültür rotaları
 │   ├── kaman_analiz_raporu.md                  # Otomatik sentez ve mekânsal analiz raporu
 │   ├── kronoloji_cetveli.md                     # MÖ 2800'den günümüze karşılaştırmalı matris
 │   ├── ceviz_yetistiriciligi_rehberi.md         # Kaman cevizi agronomik bakım ve don koruma rehberi

@@ -1,5 +1,7 @@
 # Mustafa Kemal Paşa ve Heyet-i Temsiliye'nin Kaman İntikali (24-25 Aralık 1919)
 
+![Mustafa Kemal Paşa ve Seymenlerin Kaman'da Karşılanışı ve Tarihi İskân Alanı](../assets/banners/07_banner_kaman_ataturk_ve_iskan.jpg)
+
 ## 1. Tarihsel Arka Plan ve Güzergâh
 
 Sivas Kongresi'nin ardından Millî Mücadele'nin idare merkezini Ankara'ya taşımak üzere yola çıkan Mustafa Kemal Paşa başkanlığındaki Heyet-i Temsiliye heyeti (Hüsrev Gerede, Mazhar Müfit Kansu, Rauf Orbay, Alfred Rüstem Bey, Hakkı Behiç Bey, İbrahim Süreyya Yiğit ve Muhafız Kıtası); Kayseri, Mucur ve Kırşehir üzerinden 24 Aralık 1919 Çarşamba günü Kaman'a ulaşmıştır.

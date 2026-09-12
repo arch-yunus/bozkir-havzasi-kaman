@@ -1,5 +1,7 @@
 # Bölgesel Tümülüsler, Kaya Anıtları ve Nekropoller
 
+![Baranlı ve Kaman Çevresi Tümülüsleri ve Demir Çağı Nekropol Alanı](../assets/banners/06_banner_kaman_tumulus_ve_nekropol.jpg)
+
 ## 1. Giriş ve Coğrafi Yayılım
 
 Kaman havzası ve çevresindeki topoğrafik yükseltiler (özellikle Baranlı Dağı silsilesi, Kargın sırtları, Meşeköy yamaçları ve Hirfanlı boğazı), Erken Tunç Çağı'ndan Geç Roma-Erken Bizans evresine kadar uzanan zengin bir anıtsal mezar ve nekropol peyzajına ev sahipliği yapmaktadır.

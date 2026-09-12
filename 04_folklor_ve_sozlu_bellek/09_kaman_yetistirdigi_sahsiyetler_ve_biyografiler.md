@@ -1,5 +1,7 @@
 # Kaman'ın Yetiştirdiği Tarihi Şahsiyetler, Ozanlar, Önderler ve Biyografileri
 
+![Kaman Tarihi İskânı, Seymenler ve Abdal Meclisleri](../assets/banners/07_banner_kaman_ataturk_ve_iskan.jpg)
+
 Bu monografik envanter; Kaman mikro-havzasında doğmuş, yaşamış veya Kaman'ın kültürel, manevi, edebi, bilimsel ve siyasi hafızasına silinmez izler bırakmış tarihi büyüklerin ayrıntılı biyografilerini, fikirlerini ve sözlü/yazılı alıntılarını bir araya getirmektedir.
 
 ```text

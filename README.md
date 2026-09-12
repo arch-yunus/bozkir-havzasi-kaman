@@ -21,9 +21,10 @@ Erken Tunç Çağı'ndan Demir Çağı'na, Hitit çekirdek bölgesinden Selçukl
 
 ## 🗺️ İnteraktif Web CBS Atlası & Görsel Portali
 
-Depo bünyesinde; tüm höyüklerin, tümülüslerin, köylerin ve doğal alanların konumsal olarak incelenebildiği, istatistiki grafiklerin ve müzik/fenoloji matrislerinin yer aldığı tek sayfalık modern bir **Web CBS Atlası** ([index.html](index.html) / [docs/index.html](docs/index.html)) bulunmaktadır.
+Depo bünyesinde; tüm höyüklerin, tümülüslerin, köylerin ve doğal alanların konumsal olarak incelenebildiği, istatistiki grafiklerin ve müzik/fenoloji/Japon Bahçesi matrislerinin yer aldığı tek sayfalık modern bir **Web CBS Atlası** ([index.html](index.html) / [docs/index.html](docs/index.html)) bulunmaktadır.
 
 - **Canlı Harita:** OpenStreetMap & Leaflet.js tabanlı, filtreli ve ölçüm destekli katmanlar.
+- **🌸 Mikasanomiya Japon Bahçesi Sekmesi:** 22.000 m² alanıyla Japonya dışındaki en büyük Japon bahçesinin botanik ve Zen rehberi.
 - **İstatistik Paneli:** Rakım histogramları, boy/oymak dağılımları, tarımsal desen grafikleri (Chart.js).
 - **Müzik Antropolojisi:** Bozlak perde ve makam düzenleri (Garip Ayağı).
 - **Agronomi Takvimi:** Kaman cevizi fenolojik döngüsü ve don koruma rehberi.
@@ -42,21 +43,6 @@ Depo bünyesinde; tüm höyüklerin, tümülüslerin, köylerin ve doğal alanla
 > *"Kaman-Kalehöyük, 280 metre çapında ve 16 metre yüksekliğinde tipik bir İç Anadolu tepe yerleşimi görünümündedir; fakat derinliğine inildikçe kesintisiz stratigrafisiyle tüm Yakındoğu kronolojisini doğrulayan canlı bir takvim taşır."*  
 > — **Dr. Kimiyoshi Matsumura**
 
-> *"Anadolu'yu anlamak isteyen adam taşa değil, çanağın kırığına baksın. Kalehöyük'ün çamurunda MÖ ikinci binyılın parmak izi hâlâ durur; kuruyan çamur, ustasının elini unutmamıştır."*  
-> — *Kazı Alanı Sözlü Arşivi*
-
-> *"Tarih, büyük sarayların mermerlerinde değil; bozkır köylüsünün tahıl depoladığı küplerde, yangın tabakalarının kömürleşmiş buğday tanelerinde saklıdır."*  
-> — *Kaman Çevresi Arkeobotanik Saha Raporu*
-
-> *"Karanlık Çağ dedikleri dönem Anadolu'da bir yok oluş değil, sadece yazının suskunluğudur. Kalehöyük'ün Demir Çağı tabakaları, o suskunluğun altında hayatın ve maden ocaklarının harıl harıl çalıştığını belgeler."*  
-> — *Anadolu Demir Çağları Sempozyum Bildirileri*
-
-> *"Büklükale, Kızılırmak'ın en vahşi boğazında bir kartal yuvası gibidir; nehir geçitlerini tutan Hitit prensleri, Kaman ovasına inen kervanların geçiş vergisini buradan denetlemiştir."*  
-> — *Büklükale Kazı Heyeti Raporu*
-
-> *"Bir tohum tanesi bin yıl uyur; çapa değdiğinde, flotasyon kazanında yüzeye çıktığında bize o çağın yağmurunu, kıtlığını ve bereketini anlatır."*  
-> — **Dr. Andrew Fairbairn**, *Paleoetnobotanik Değerlendirmeleri*
-
 > *"Mikasanomiya bahçesine diktiğimiz her ardıç, Kalehöyük'ün MÖ üçüncü bin yılındaki hatıllarına selam durur. Toprak hafızasını kaybetmez; bitki de insan da köklerine döner."*  
 > — **Prens Takahito Mikasa**, *JIAA Açılış Nutku (1993)*
 
@@ -71,15 +57,6 @@ Depo bünyesinde; tüm höyüklerin, tümülüslerin, köylerin ve doğal alanla
 
 > *"Dost elinden gel olmazsa varılmaz / Rızasız bahçenin gülü derilmez / Kalpten kalbe bir yol vardır görülmez / Gönülden gönüle giden yol gizli..."*  
 > — **Neşet Ertaş**
-
-> *"Bozkırda türkü söylemek bağırmak değildir; rüzgâra, dağa, ıssızlığa karşı içindeki yangını savurmaktır. Bozlak, yerleşik nizama sığmayan göçer Türkmen'in ötelerden getirdiği iç çekişidir."*  
-> — **Cahit Obruk**, *Bozkır Tezkereleri*
-
-> *"Muharrem Usta çaldığı vakit saz ağlamazdı; toprağın altındaki su sızlar, gökteki turna rotasını şaşırırdı. Kırşehir ile Kaman arası sazın perdesinde ölçülür, kilometreyle değil."*  
-> — *Yerel Cönk ve Meclis Notları*
-
-> *"Çekiç Ali zurnaya nefes vurduğunda Baranlı Dağı'nın yankısı düğün meydanına inerdi. Çekiç'in parmağındaki çeviklik, bozkır şahininin süzülüşü gibiydi."*  
-> — *Kaman Düğün Belleği Mülakatları*
 
 > *"Âşık Said der ki çağlar gözlerim / Yârdan ayrılalı dinmez sızılarım / Bozkırın bağrında kaldı izlerim / Kaman'ın yoluna düştüm ağlarım..."*  
 > — **Âşık Said**, *Kırşehir-Kaman Divânı*
@@ -96,12 +73,6 @@ Depo bünyesinde; tüm höyüklerin, tümülüslerin, köylerin ve doğal alanla
 > *"Baranlı Dağı'nın sisi kalkmadan Kaman'a bahar gelmez; ceviz çiçeği ayazı görmeden içinin yağını bağlamaz."*  
 > — *Kaman Yaşlılar Meclisi Anlatısı*
 
-> *"Bozkır insanı ağacı sadece gölge bilmez; ağaç burada toprağın direği, rüzgârın freni, çölleşen yalnızlığın yegâne yeşil sığınağıdır."*  
-> — *İç Anadolu Step Ekolojisi Araştırmaları*
-
-> *"Geven dediğin kuru bir diken yumağı sanılır; oysa toprağı tırnaklarıyla tutan odur. Gevenin söküldüğü yerde rüzgâr tarlayı sıyırır götürür."*  
-> — *Bozkır Erozyon ve Toprak İncelemeleri*
-
 ---
 
 ### IV. Kızılırmak Havzası, Hirfanlı Sahili ve İskân Hatları
@@ -114,8 +85,26 @@ Depo bünyesinde; tüm höyüklerin, tümülüslerin, köylerin ve doğal alanla
 > *"Konar-göçerin evi sırtındadır; kışın Kızılırmak boyuna iner, yazın Baranlı'nın eteğine çadır kurar. Onlar için sınır hudut değil, suyun ve otun bittiği yerdir."*  
 > — **Prof. Dr. Faruk Sümer**
 
-> *"Savcılı koyundan esen yel, Hirfanlı'nın kokusunu getirir. Bozkırın ortasında deniz havası solumak istersen Savcılı'nın bağlarına varacaksın."*  
-> — *Kızılırmak Kıyısı Seyahat Notları*
+---
+
+### V. Baranlı Yamaçları, Tümülüsler ve Demir Çağı Nekropolleri
+
+![Baranlı ve Kaman Çevresi Tümülüsleri ve Demir Çağı Nekropol Alanı](assets/banners/06_banner_kaman_tumulus_ve_nekropol.jpg)
+
+> *"Baranlı silsilesinin sırtlarına dizilmiş Frig tümülüsleri; bozkırın rüzgârında sessizce bekleyen bin yıllık bekçiler gibidir. Ahşap mezar odalarındaki her ardıç tomruğu, Gordion ile Kaman arasındaki kadim bağı fısıldar."*  
+> — *Gassan Çukuru Yüzey Araştırması Raporları*
+
+---
+
+### VI. Millî Mücadele, Seymen Alayı ve 1919 Kaman İntikali
+
+![Mustafa Kemal Paşa ve Seymenlerin Kaman'da Karşılanışı ve Tarihi İskân Alanı](assets/banners/07_banner_kaman_ataturk_ve_iskan.jpg)
+
+> *"Mucur ve Kırşehir tarîkiyle Kaman kasabasına muvasalat olunmuştur. Ahali ve kuva-yı milliyemizin azim ve hissiyatı fevkalade yüksektir. Yarın sabah Ankara istikametine hareket edilecektir."*  
+> — **Mustafa Kemal Paşa**, *Kaman Telgrafhanesi (24-25 Aralık 1919)*
+
+> *"Vatanın halası için Paşa Hazretlerinin ardında birleşmek her ferde farzdır. Kaman'dan Ankara'ya açılan kapı, hürriyet kapısıdır."*  
+> — **Çelebi Cemalettin Efendi**
 
 ---
 
@@ -171,7 +160,8 @@ bozkir-havzasi-kaman/
 │   ├── 05_kaman_divani_ve_siir_antolojisi.md    # Kaman, Baranlı ve Bozlak şiir antolojisi
 │   ├── 06_kaman_mutfagi_ve_gastronomi.md        # Geleneksel yemekler, cevizli çörek ve bağcılık mutfağı
 │   ├── 07_halk_hekimligi_ve_etnobotanik.md      # Şifalı step bitkileri, ocaklık ve sınıkçılık geleneği
-│   └── 08_kaman_abdal_ocaklari_ve_muharrem_ertas.md # Muharrem Ertaş ekolü, soy kütükleri ve icra tavrı
+│   ├── 08_kaman_abdal_ocaklari_ve_muharrem_ertas.md # Muharrem Ertaş ekolü, soy kütükleri ve icra tavrı
+│   └── 09_kaman_yetistirdigi_sahsiyetler_ve_biyografiler.md # Âşık Said, Seyfullah, Çelebi Cemalettin biyografileri
 ├── 05_gorsel_ve_kartografik_arsiv/
 │   ├── haritalar/
 │   │   ├── README.md                            # Kartografik kaynaklar ve GIS metodolojisi
@@ -179,9 +169,16 @@ bozkir-havzasi-kaman/
 │   │   ├── kaman_koyler_ve_nufus.csv            # 20 köyün rakım, boy kökeni ve ürün tabular veri seti
 │   │   └── kaman_arkeoloji_atlasi.kml           # Google Earth Pro ve CBS 3D KML envanter dosyası
 │   └── fotograflar/
-│       └── README.md                            # Görsel arşiv metaveri şablonu
+│       ├── 01_banner_kaman_kalehoyuk.jpg        # Kalehöyük kazı alanı ve bozkır ufku panoraması
+│       ├── 02_banner_mikasanomiya_japon_bahcesi.jpg # Mikasanomiya Japon Bahçesi ve gölet panoraması
+│       ├── 03_banner_kaman_ceviz_ve_baranli.jpg # Kaman ceviz bahçeleri ve Baranlı Dağı panoraması
+│       ├── 04_banner_kirsehir_abdal_bozlak.jpg  # Bozlak ozanı ve Kırşehir-Kaman saz geleneği panoraması
+│       ├── 05_banner_hirfanli_kizilirmak_havzasi.jpg # Kızılırmak ve Hirfanlı Baraj Gölü sahili panoraması
+│       ├── 06_banner_kaman_tumulus_ve_nekropol.jpg # Baranlı Demir Çağı ve Frig tümülüsleri panoraması
+│       ├── 07_banner_kaman_ataturk_ve_iskan.jpg # 1919 Kaman Seymenleri ve tarihi iskân panoraması
+│       └── README.md                            # Görsel arşiv ve 7 banner metaveri kataloğu
 ├── assets/
-│   └── banners/                                 # Yüksek çözünürlüklü tematik monografi bannerları (5 adet)
+│   └── banners/                                 # 7 adet yüksek çözünürlüklü tematik monografi bannerı
 ├── docs/
 │   ├── index.html                              # GitHub Pages için Web CBS Portalı
 │   ├── kaman_analiz_raporu.md                  # Otomatik sentez ve mekânsal analiz raporu
@@ -209,10 +206,10 @@ bozkir-havzasi-kaman/
 
 ## 🛠️ CLI ve Analitik Araçların Kullanımı
 
-Depodaki Python araçları herhangi bir harici kütüphane bağımlılığı olmaksızın standart Python kütüphanesiyle çalışır:
+Depodaki Python araçları standart Python kütüphanesiyle doğrudan çalıştırılabilir:
 
 ```bash
-# 1. Veri setleri, Markdown bağlantıları ve görsel bütünlüğünü test edin:
+# 1. Veri setleri, Markdown bağlantıları ve 7 görsel banner bütünlüğünü test edin:
 python scripts/validate_dataset.py
 
 # 2. Mekânsal istatistikler, mesafe matrisleri ve hipsometrik analizleri çalıştırın:

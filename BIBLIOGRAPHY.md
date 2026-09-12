@@ -7,7 +7,9 @@ Bu bibliyografya; Kaman ve Orta Kızılırmak / Bozkır Havzası üzerine yapıl
 ## 1. Arkeoloji, Kazı Raporları ve Arkeometri
 
 * **Akurgal, Ekrem.** (1995). *Hatti ve Hitit Uygarlıkları*. İzmir: Yaşar Eğitim ve Kültür Vakfı Yayınları.
+* **Bökönyi, Sándor.** (1993). "Faunal Remains from Kaman-Kalehöyük: Archaeozoological Examination of Bronze and Iron Age Settlements." *Anatolian Archaeological Studies*, 2, s. 95–118.
 * **Fairbairn, Andrew & Omura, Sachihiro.** (2005). "Archaeobotanical Research at Kaman-Kalehöyük: Plant Use in Central Anatolia." *Antiquity*, 79(304), s. 1–12.
+* **Hongo, Hitomi.** (1998). "Patterns of Animal Exploitation at Kaman-Kalehöyük: A Zooarchaeological Perspective." *Anatolian Archaeological Studies*, 7, s. 255–278.
 * **Kondo, Jiro & Nakao, Hisashi.** (2012). "Geomorphological Survey and Ancient Route Reconstruction around Kaman Basin." *Anatolian Studies*, 62, s. 45–68.
 * **Matsumura, Kimiyoshi.** (2005). *Regional Characteristics of Central Anatolian Iron Age Ceramics: The View from Kaman-Kalehöyük*. Tokyo: Middle Eastern Culture Center in Japan.
 * **Matsumura, Kimiyoshi.** (2008). "Kaman-Kalehöyük Kazılarında Bulunan Demir Çağı Mühürleri ve Kronolojik Katmanlar." *Anadolu Araştırmaları*, 18(2), s. 77–104.
@@ -39,15 +41,17 @@ Bu bibliyografya; Kaman ve Orta Kızılırmak / Bozkır Havzası üzerine yapıl
 * **Kansu, Mazhar Müfit.** (1966). *Erzurum'dan Ölümüne Kadar Atatürk'le Beraber*. Ankara: Türk Tarih Kurumu Yayınları.
 * **Kırşehir Şer'iyye Sicilleri (KŞS):** Ankara Milli Kütüphane Arşivi, Defter No: 1, 2, 4 (18. ve 19. Yüzyıl Kaman, Çiçekdağı ve Mucur Mahkeme Hüccetleri).
 * **Kuran, Ercüment.** (1988). "Orta Anadolu'da Millî Mücadele ve Kırşehir-Kaman Müdafaa-i Hukuk Teşkilatlanması." *Atatürk Araştırma Merkezi Dergisi*, 4(12), s. 655–670.
+* **Ramsay, William Mitchell.** (1960). *Anadolu'nun Tarihi Coğrafyası* (Çev. Mihri Pektaş). İstanbul: MEB Yayınları.
 * **Sümer, Faruk.** (1999). *Oğuzlar (Türkmenler): Tarihleri, Boy Teşkilatı, Destanları*. 5. Baskı. İstanbul: Türk Dünyası Araştırmaları Vakfı.
 * **Sümer, Faruk.** (1992). *Selçuklular Devrinde Doğu Anadolu'da Türk Beylikleri ve Bozok İskânı*. Ankara: Türk Tarih Kurumu Yayınları.
+* **Taeschner, Franz.** (1924). *Das anatolische Wegenetz nach osmanischen Quellen*. Leipzig: Mayer & Müller.
 * **Tarım, Cevat Hakkı.** (1938). *Tarihte Kırşehri - Gülşehri ve Babailer*. Kırşehir: Vilayet Matbaası.
 * **Tarım, Cevat Hakkı.** (1948). *Kırşehir Tarihi Üzerine Araştırmalar*. Kırşehir: Vilayet Matbaası.
 * **Türkay, Cevdet.** (1979). *Başbakanlık Osmanlı Arşivi Belgelerine Göre Osmanlı İmparatorluğunda Oymak, Aşiret ve Cemaatler*. İstanbul: Tercüman Yayınları.
 
 ---
 
-## 3. Coğrafya, Jeoloji, Ekoloji, Botanik ve Tarım
+## 3. Coğrafya, Jeoloji, Ekoloji, Pedoloji ve Tarım
 
 * **Akman, Yıldırım.** (1990). *İç Anadolu Steplerinin Bitki Sosyolojisi, Ekolojisi ve Vejetasyon Katları*. Ankara: Palme Yayıncılık.
 * **Atalay, İbrahim.** (2002). *Türkiye Jeomorfolojisi ve Toprak Coğrafyası*. İzmir: Meta Basım.
@@ -59,10 +63,11 @@ Bu bibliyografya; Kaman ve Orta Kızılırmak / Bozkır Havzası üzerine yapıl
 * **Göncüoğlu, M. C. vd.** (1991). "Orta Anadolu Masifinin Batı Bölümünün Jeolojisi (Baranlı ve Kırşehir Granitoyidleri)." *MTA Dergisi*, 112, s. 1–28.
 * **Meteoroloji Genel Müdürlüğü (MGM):** *Kırşehir ve Kaman İstasyonları Çok Yıllık İklim Rasat Bültenleri (1960–2020)*. Ankara.
 * **Şen, S. Mehmet.** (2011). *Ceviz Yetiştiriciliği, Besin Değeri ve Folyo Asit Dinamiği*. Ankara: Güven Kitabevi.
+* **Toprak Su Genel Müdürlüğü (T.C. Köy İşleri Bakanlığı):** (1974). *Kırşehir İli Toprak Kaynağı Envanter Raporu*. Rapor No: 40, Ankara.
 
 ---
 
-## 4. Folklor, Etnomüzikoloji ve Sözlü Kültür
+## 4. Folklor, Etnomüzikoloji, Edebiyat ve Sözlü Kültür
 
 * **Atılgan, Halil.** (2000). *Kırşehir ve Bozlak Havzası Türküleri, Ağıtları*. Ankara: Kültür Bakanlığı Yayınları.
 * **Boratav, Pertev Naili.** (1982). *100 Soruda Türk Halk Edebiyatı*. İstanbul: Gerçek Yayınevi.
@@ -72,3 +77,5 @@ Bu bibliyografya; Kaman ve Orta Kızılırmak / Bozkır Havzası üzerine yapıl
 * **Özbek, Mehmet.** (1975). *Folklor ve Türkülerimiz*. İstanbul: Ötüken Neşriyat.
 * **Parlak, Erol.** (2000). *Türkiye'de Bağlama ve Bozlak Geleneğinde Garip Ayağı*. İstanbul: İTÜ Sosyal Bilimler Enstitüsü Doktora Tezi.
 * **Şenel, Süleyman.** (1999). "Kırşehir Abdal Musikisi ve Muharrem Ertaş Ekolü." *Folklor/Edebiyat Dergisi*, 5(19), s. 143–158.
+* **Tanpınar, Ahmet Hamdi.** (1946). *Beş Şehir*. Ankara: Ülkü Basımevi.
+* **Yaşar Kemal.** (1952). *Ağıtlar*. Adana: Halkevi Yayınları.

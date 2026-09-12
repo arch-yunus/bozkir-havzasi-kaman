@@ -1,6 +1,6 @@
 # Bozkır Havzası Kaman - Kapsamlı Mekânsal ve Sosyo-Ekonomik Analiz Raporu
 
-> **Rapor Üretim Tarihi:** 2026-09-12 14:31:50  
+> **Rapor Üretim Tarihi:** 2026-09-12 15:25:01  
 > **Veri Tabanı:** Kaman Açık Kaynak CBS ve Yerel Hafıza Arşivi  
 > **Kapsam:** Kaman İlçe Merkezi, Çağırkan, Baranlı Silsilesi ve Kızılırmak / Hirfanlı Kıyı Şeridi
 

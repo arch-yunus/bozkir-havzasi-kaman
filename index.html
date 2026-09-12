@@ -123,8 +123,8 @@
                 <p class="text-xs text-stone-500">WGS84 Koordinat Sistemi | 20 Tescilli Odak & Kırsal Ağ</p>
               </div>
 
-              <!-- Katman Filtreleri -->
-              <div class="flex items-center space-x-2">
+              <!-- Katman Filtreleri ve Rotalar -->
+              <div class="flex flex-wrap items-center gap-2">
                 <select id="categoryFilter" onchange="filterMap()" class="text-xs bg-stone-50 border border-stone-300 rounded-lg px-2.5 py-1.5 font-medium text-stone-700 focus:ring-2 focus:ring-amber-500 focus:outline-none">
                   <option value="ALL">Tüm Kategoriler (20)</option>
                   <option value="Arkeolojik Sit">Arkeolojik Höyük & Garnizon</option>
@@ -132,10 +132,24 @@
                   <option value="Köy / İskân">Kırsal İskân ve Köyler</option>
                   <option value="Doğal / Ekolojik">Doğal Sit & Bahçeler</option>
                 </select>
+
+                <div class="inline-flex rounded-lg border border-stone-300 bg-stone-100 p-0.5 text-xs">
+                  <button onclick="drawRoute(1)" id="btn-route-1" class="px-2 py-1 rounded-md font-medium text-stone-700 hover:bg-white transition" title="1. Gün: Arkeoloji & Japon Bahçesi"><i class="fa-solid fa-route text-red-600 mr-1"></i> Rota 1</button>
+                  <button onclick="drawRoute(2)" id="btn-route-2" class="px-2 py-1 rounded-md font-medium text-stone-700 hover:bg-white transition" title="2. Gün: Baranlı & Hirfanlı"><i class="fa-solid fa-route text-emerald-600 mr-1"></i> Rota 2</button>
+                  <button onclick="drawRoute(3)" id="btn-route-3" class="px-2 py-1 rounded-md font-medium text-stone-700 hover:bg-white transition" title="3. Gün: Abdal & Kırsal Hafıza"><i class="fa-solid fa-route text-purple-600 mr-1"></i> Rota 3</button>
+                  <button onclick="clearRoute()" id="btn-route-clear" class="px-2 py-1 rounded-md font-medium text-stone-500 hover:text-stone-800 hover:bg-white transition" title="Rotayı Temizle"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+
                 <button onclick="resetMapView()" class="px-2.5 py-1.5 bg-stone-100 hover:bg-stone-200 text-stone-700 text-xs font-semibold rounded-lg border border-stone-300" title="Haritayı Sıfırla">
                   <i class="fa-solid fa-crosshairs"></i>
                 </button>
               </div>
+            </div>
+
+            <!-- Rota Bilgi Çubuğu (Dinamik) -->
+            <div id="routeBanner" class="hidden mb-3 p-2.5 bg-amber-50 border border-amber-200 rounded-xl text-xs flex items-center justify-between">
+              <span id="routeBannerText" class="font-medium text-amber-900"></span>
+              <button onclick="clearRoute()" class="text-amber-700 font-bold hover:underline text-[11px]">Kapat</button>
             </div>
 
             <!-- Harita Konteyneri -->
@@ -307,7 +321,7 @@
           Monografi Bölüm Rehberi ve Araştırma Kütüphanesi
         </h2>
         <p class="text-sm text-stone-600 mb-6 leading-relaxed">
-          Kaman mikro-havzasını konu alan 4 ana araştırma disiplini ve 29 akademik bölümden oluşan açık kaynak monografi koleksiyonu.
+          Kaman mikro-havzasını konu alan 4 ana araştırma disiplini ve 37 akademik bölümden oluşan açık kaynak monografi koleksiyonu.
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -316,17 +330,18 @@
           <div class="p-4 bg-stone-50 rounded-xl border border-stone-200">
             <div class="flex items-center space-x-2 text-red-700 font-bold text-sm mb-3">
               <i class="fa-solid fa-trowel-bricks"></i>
-              <span>01. Arkeoloji & Kazılar</span>
+              <span>01. Arkeoloji & Kazılar (9)</span>
             </div>
             <ul class="text-xs space-y-2 text-stone-700">
               <li class="hover:text-amber-700">• 01. Kalehöyük Stratigrafisi</li>
               <li class="hover:text-amber-700">• 02. JIAA Enstitü Tarihçesi</li>
               <li class="hover:text-amber-700">• 03. Büklükale & Yassıhöyük</li>
               <li class="hover:text-amber-700">• 04. Arkeometrik Veriler</li>
-              <li class="hover:text-amber-700 font-semibold text-red-800">• 05. Japon Bahçesi Ekolojisi</li>
+              <li class="hover:text-amber-700">• 05. Japon Bahçesi Ekolojisi</li>
               <li class="hover:text-amber-700">• 06. Müze Kataloğu</li>
               <li class="hover:text-amber-700">• 07. Demir Çağı Metalurjisi</li>
               <li class="hover:text-amber-700">• 08. Bölgesel Tümülüsler</li>
+              <li class="hover:text-amber-700 font-semibold text-red-800">• 09. Zooarkeoloji ve Fauna (Yeni)</li>
             </ul>
           </div>
 
@@ -334,7 +349,7 @@
           <div class="p-4 bg-stone-50 rounded-xl border border-stone-200">
             <div class="flex items-center space-x-2 text-emerald-700 font-bold text-sm mb-3">
               <i class="fa-solid fa-mountain-sun"></i>
-              <span>02. Coğrafya & Ekoloji</span>
+              <span>02. Coğrafya & Ekoloji (7)</span>
             </div>
             <ul class="text-xs space-y-2 text-stone-700">
               <li class="hover:text-amber-700">• 01. Jeomorfoloji ve İklim</li>
@@ -343,6 +358,7 @@
               <li class="hover:text-amber-700">• 04. Endemik Flora ve Step</li>
               <li class="hover:text-amber-700">• 05. İklim Krizi & Hidroloji</li>
               <li class="hover:text-amber-700">• 06. Baranlı Jeolojisi</li>
+              <li class="hover:text-amber-700 font-semibold text-emerald-800">• 07. Toprak Tipleri & Pedoloji (Yeni)</li>
             </ul>
           </div>
 
@@ -350,7 +366,7 @@
           <div class="p-4 bg-stone-50 rounded-xl border border-stone-200">
             <div class="flex items-center space-x-2 text-amber-700 font-bold text-sm mb-3">
               <i class="fa-solid fa-scroll"></i>
-              <span>03. Tarih & İskân</span>
+              <span>03. Tarih & İskân (9)</span>
             </div>
             <ul class="text-xs space-y-2 text-stone-700">
               <li class="hover:text-amber-700">• 01. Osmanlı Tahrir Kayıtları</li>
@@ -360,7 +376,8 @@
               <li class="hover:text-amber-700">• 05. Seyyahlar ve Salnameler</li>
               <li class="hover:text-amber-700">• 06. Nüfus Defterleri (1831-45)</li>
               <li class="hover:text-amber-700">• 07. Atatürk Kaman Günlüğü</li>
-              <li class="hover:text-amber-700 font-semibold text-amber-800">• 08. Köy Adları Sözlüğü (Yeni)</li>
+              <li class="hover:text-amber-700">• 08. Köy Adları Sözlüğü</li>
+              <li class="hover:text-amber-700 font-semibold text-amber-800">• 09. Ticaret & Kervan Yolları (Yeni)</li>
             </ul>
           </div>
 
@@ -368,7 +385,7 @@
           <div class="p-4 bg-stone-50 rounded-xl border border-stone-200">
             <div class="flex items-center space-x-2 text-purple-700 font-bold text-sm mb-3">
               <i class="fa-solid fa-microphone-lines"></i>
-              <span>04. Folklor & Hafıza</span>
+              <span>04. Folklor & Hafıza (12)</span>
             </div>
             <ul class="text-xs space-y-2 text-stone-700">
               <li class="hover:text-amber-700">• 01. Bozlak & Müzik Antropolojisi</li>
@@ -381,12 +398,29 @@
               <li class="hover:text-amber-700">• 08. Abdal Ocakları</li>
               <li class="hover:text-amber-700">• 09. Yetiştirdiği Büyükler</li>
               <li class="hover:text-amber-700">• 10. Edebiyat Antolojisi</li>
-              <li class="hover:text-amber-700 font-semibold text-purple-800">• 11. Masallar ve Efsaneler</li>
-              <li class="hover:text-amber-700 font-semibold text-purple-800">• 12. Cönkler ve Mecmualar</li>
+              <li class="hover:text-amber-700">• 11. Masallar ve Efsaneler</li>
+              <li class="hover:text-amber-700">• 12. Cönkler ve Mecmualar</li>
             </ul>
           </div>
 
         </div>
+
+        <!-- Ek Kılavuzlar ve Analizler -->
+        <div class="mt-6 pt-4 border-t border-stone-200 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-3 bg-stone-100 rounded-lg text-xs">
+            <b class="text-stone-800 block mb-1"><i class="fa-solid fa-route text-amber-700 mr-1"></i> Kültür Gezi Rotaları Kılavuzu</b>
+            <p class="text-stone-600">1, 2 ve 3 günlük tematik arkeolojik ve kültürel gezi rehberi.</p>
+          </div>
+          <div class="p-3 bg-stone-100 rounded-lg text-xs">
+            <b class="text-stone-800 block mb-1"><i class="fa-solid fa-atom text-blue-700 mr-1"></i> Arkeometri & C14 Kataloğu</b>
+            <p class="text-stone-600">OxCal radyokarbon, dendrokronoloji ve metalurjik tahlil arşivi.</p>
+          </div>
+          <div class="p-3 bg-stone-100 rounded-lg text-xs">
+            <b class="text-stone-800 block mb-1"><i class="fa-solid fa-chart-line text-emerald-700 mr-1"></i> CBS & Havza Analiz Raporu</b>
+            <p class="text-stone-600">Otomatik üretilen hipsometri, mesafe matrisi ve yoğunluk analizleri.</p>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -525,6 +559,81 @@
     }).addTo(map);
 
     let markers = [];
+    let currentRouteLayer = null;
+
+    const routeDefinitions = {
+      1: {
+        name: "1. Gün: Klasik Arkeoloji, JIAA & Japon Bahçesi",
+        desc: "Kaman-Kalehöyük (SIT-01) ➔ Mikasanomiya Japon Bahçesi (SIT-02) ➔ Arkeoloji Müzesi (SIT-03) ➔ Çağırkan Baba (SIT-09) ➔ Ceviz Bahçesi (SIT-19) ➔ Atatürk Karşılama Mevkii (SIT-11)",
+        color: "#dc2626",
+        coords: [
+          [39.3582, 33.7236],
+          [39.3595, 33.7258],
+          [39.3588, 33.7242],
+          [39.3610, 33.7265],
+          [39.3520, 33.7350],
+          [39.3560, 33.7225]
+        ]
+      },
+      2: {
+        name: "2. Gün: Doğa, Baranlı Zirvesi & Hirfanlı Kıyıları",
+        desc: "Baranlı Dağı Zirvesi (SIT-06) ➔ Kargın Meşesi (SIT-08) ➔ Kurancılı (SIT-13) ➔ Hirfanlı HES (SIT-14) ➔ Savcılı Büyükoba (SIT-07) ➔ Savcılı Bağbaşı Terasları (SIT-17)",
+        color: "#16a34a",
+        coords: [
+          [39.4125, 33.8214],
+          [39.3890, 33.7845],
+          [39.4210, 33.7530],
+          [39.2710, 33.5210],
+          [39.2456, 33.5823],
+          [39.2150, 33.5640]
+        ]
+      },
+      3: {
+        name: "3. Gün: Abdal Kültürü, Âşık Ocakları & Kırsal Hafıza",
+        desc: "Kaman Merkez (SIT-11) ➔ Çadırlıhacıbayram (SIT-12) ➔ Yassıhöyük (SIT-05) ➔ İkizler Höyüğü (SIT-18) ➔ Bayındır (SIT-15) ➔ Tatık Kaya Mezarları (SIT-16) ➔ Demirli Su Değirmenleri (SIT-20)",
+        color: "#9333ea",
+        coords: [
+          [39.3560, 33.7225],
+          [39.3210, 33.6420],
+          [39.2945, 33.7012],
+          [39.3120, 33.7910],
+          [39.3850, 33.6120],
+          [39.4420, 33.6890],
+          [39.4600, 33.6300]
+        ]
+      }
+    };
+
+    function drawRoute(id) {
+      if (currentRouteLayer) {
+        map.removeLayer(currentRouteLayer);
+      }
+      const r = routeDefinitions[id];
+      if (!r) return;
+
+      currentRouteLayer = L.polyline(r.coords, {
+        color: r.color,
+        weight: 5,
+        opacity: 0.85,
+        dashArray: '8, 8',
+        lineJoin: 'round'
+      }).addTo(map);
+
+      map.fitBounds(currentRouteLayer.getBounds(), { padding: [40, 40] });
+
+      const banner = document.getElementById('routeBanner');
+      const text = document.getElementById('routeBannerText');
+      banner.classList.remove('hidden');
+      text.innerHTML = `<b>${r.name}:</b> ${r.desc}`;
+    }
+
+    function clearRoute() {
+      if (currentRouteLayer) {
+        map.removeLayer(currentRouteLayer);
+        currentRouteLayer = null;
+      }
+      document.getElementById('routeBanner').classList.add('hidden');
+    }
 
     function getMarkerColor(category) {
       if (category.includes('Arkeolojik')) return '#dc2626';

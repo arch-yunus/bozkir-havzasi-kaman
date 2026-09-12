@@ -205,7 +205,7 @@ Açık kaynak CBS veri setimizde (`sit_alanlari.geojson` ve `kaman_koyler_ve_nuf
 
 ---
 
-## 📂 Dizin Yapısı ve Belge Mimarisi (33 Bölüm ve Rehber)
+## 📂 Dizin Yapısı ve Belge Mimarisi (37 Bölüm ve Rehber)
 
 ```text
 bozkir-havzasi-kaman/
@@ -217,14 +217,16 @@ bozkir-havzasi-kaman/
 │   ├── 05_japon_bahcesi_ekolojisi.md            # Mikasanomiya anı bahçesi ve peyzaj mimarisi
 │   ├── 06_muze_katalogu_ve_secme_eserler.md     # Kaman Kalehöyük Arkeoloji Müzesi seçme eserler envanteri
 │   ├── 07_kalehoyuk_maden_ve_demir_cagi_metalurjisi.md # Tunç ve demir fırınları, cüruf ve çelik metalurjisi
-│   └── 08_bolgesel_tumulusler_ve_kaya_anitlari.md # Baranlı ve çevre tümülüsleri, kaya mezarları ve nekropoller
+│   ├── 08_bolgesel_tumulusler_ve_kaya_anitlari.md # Baranlı ve çevre tümülüsleri, kaya mezarları ve nekropoller
+│   └── 09_kalehoyuk_zooarkeoloji_ve_fauna.md    # Hayvan kemiği analizleri, evcilleştirme ve fauna evrimi
 ├── 02_cografya_ve_ekolojik_yapi/
 │   ├── 01_jeomorfoloji_ve_iklim.md              # Baranlı kütlesi, vadi tabanları, yağış rejimleri
 │   ├── 02_ceviz_botanigi_ve_tarim.md            # Kaman cevizi seleksiyonları ve toprak talepleri
 │   ├── 03_su_ve_kizilirmak_havzasi.md           # Akarsular, çeşmeler, göletler ve kuraklık verileri
 │   ├── 04_endemik_flora_ve_step.md              # Geven, yavşan otu ve step vejetasyonu envanteri
 │   ├── 05_iklim_krizi_ve_havza_hidrolojisi.md   # Kuraklık indisleri (SPI/SPEI) ve yeraltı su krizi
-│   └── 06_baranli_dagi_jeolojisi_ve_plutonizim.md # Baranlı granitoyidi, skarn zonları ve jeomorfolojik evrim
+│   ├── 06_baranli_dagi_jeolojisi_ve_plutonizim.md # Baranlı granitoyidi, skarn zonları ve jeomorfolojik evrim
+│   └── 07_kaman_toprak_tipleri_ve_pedoloji.md   # Toprak pedolojisi, derin alüvyon ve ceviz ekolojisi
 ├── 03_tarihsel_belgeler_ve_iskan/
 │   ├── 01_osmanli_tahrir_kayitlari.md           # 16. yy Bozok ve Kırşehir livası tahrir transkripsiyonları
 │   ├── 02_asiretler_ve_konar_gocer.md           # Türkmen boyları, cemaatler ve iskân fermanları
@@ -233,7 +235,8 @@ bozkir-havzasi-kaman/
 │   ├── 05_seyyahlar_ve_salnameler.md            # Evliya Çelebi, Salnameler ve Batılı seyyah kayıtları
 │   ├── 06_kaman_nufus_defterleri_1831_1845.md   # 1831 Nüfus ve 1845 Temettuat hane gelirleri envanteri
 │   ├── 07_ataturk_kaman_gunlugu_1919.md         # 24-25 Aralık 1919 Mustafa Kemal Paşa Kaman konaklaması
-│   └── 08_kaman_ve_cevre_koy_adlari_sozlugu.md  # Köy adları etimolojisi, Oğuz boyları ve tahrir indeksi
+│   ├── 08_kaman_ve_cevre_koy_adlari_sozlugu.md  # Köy adları etimolojisi, Oğuz boyları ve tahrir indeksi
+│   └── 09_kaman_ticaret_ve_kervan_yollari_tarihi.md # Asur Kolonileri, Kral Yolu, İpek Yolu ve derbentler
 ├── 04_folklor_ve_sozlu_bellek/
 │   ├── 01_bozlak_ve_muzik_antropolojisi.md      # Abdal geleneği, perde düzenleri, ezgi kalıpları
 │   ├── 02_toponimi_ve_koy_monografileri.md      # Köy adlarının morfolojik ve tarihsel kökeni
@@ -267,6 +270,7 @@ bozkir-havzasi-kaman/
 ├── docs/
 │   ├── index.html                              # GitHub Pages için Web CBS Portalı
 │   ├── kaman_kultur_ve_turizm_gezi_rotalari.md # 1, 2 ve 3 günlük tematik gezi ve kültür rotaları
+│   ├── kaman_arkeometri_ve_c14_tarihleme_katalogu.md # OxCal C14 radyokarbon ve dendrokronoloji veritabanı
 │   ├── kaman_analiz_raporu.md                  # Otomatik sentez ve mekânsal analiz raporu
 │   ├── kronoloji_cetveli.md                     # MÖ 2800'den günümüze karşılaştırmalı matris
 │   ├── ceviz_yetistiriciligi_rehberi.md         # Kaman cevizi agronomik bakım ve don koruma rehberi

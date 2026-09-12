@@ -19,6 +19,7 @@ Bu bibliyografya; Kaman ve Orta Kızılırmak / Bozkır Havzası üzerine yapıl
 * **Omura, Sachihiro.** (2000). *Kalehöyük I: 1986–1995 Kazı Sonuçları*. Tokyo: Middle Eastern Culture Center in Japan.
 * **Özgüç, Tahsin.** (1986). *Kültepe-Kaniş II: Eski Yakındoğu'nun Ticaret Merkezi*. Ankara: Türk Tarih Kurumu Yayınları.
 * **Swiny, Stuart.** (1997). "The Urban and Rural Landscapes of Ancient Central Anatolia: The Role of Kaman-Kalehöyük." *Bulletin of the American Schools of Oriental Research*, 305, s. 23–39.
+* **Yakar, Jak.** (2000). *Ethnoarchaeology of Anatolia: Rural Socio-Economic Organisation in the Bronze and Iron Ages*. Tel Aviv: Emery and Claire Yass Publications in Archaeology.
 
 ---
 
@@ -28,7 +29,7 @@ Bu bibliyografya; Kaman ve Orta Kızılırmak / Bozkır Havzası üzerine yapıl
 * **Başbakanlık Osmanlı Arşivi (BOA):**
   * *Tapu Tahrir Defterleri (TD):* TD 139 (935/1528 Kırşehri Livası), TD 998 (16. Yüzyıl Bozok Sancağı İcmal Defteri), TD 415 (Kırşehir ve Çorum Tahrirleri).
   * *Mühimme Defterleri:* 7 Nolu Mühimme (H. 975–976 / M. 1567–1568 Bozok İskân Fermanları), 12 Nolu Mühimme (Mamalu ve Danişmendli Aşiretleri Hükümleri), 111 Nolu Mühimme (H. 1113 / M. 1701 Kaman Nahiyesi Zorunlu İskân Fermanı).
-  * *Maliyeden Müdevver Defterler (MAD.d):* Kırşehir Mukataaları ve Voyvodalık Kayıtları.
+  * *Nüfus ve Temettuat Defterleri:* NFS.d 3214 (1831 Kaman Nüfus İcmali), ML.VRD.TMT 14220 (1845 Kaman Kazası Temettuatı).
 * **Cevdet, Muallim.** (1937). *Osmanlı İmparatorluğunda İskân Siyaseti ve Boy Teşkilatı*. İstanbul: Devlet Matbaası.
 * **Dulkadir, Hilmi.** (1997). *İç Anadolu'da Türkmen Aşiretleri ve Kırşehir Havzası*. Ankara: T.C. Kültür Bakanlığı HAGEM Yayınları.
 * **Evliya Çelebi.** (Günümüz Türkçesi: Seyit Ali Kahraman). *Evliya Çelebi Seyahatnâmesi (3. ve 5. Kitaplar)*. İstanbul: Yapı Kredi Yayınları.
@@ -46,14 +47,16 @@ Bu bibliyografya; Kaman ve Orta Kızılırmak / Bozkır Havzası üzerine yapıl
 
 ---
 
-## 3. Coğrafya, Ekoloji, Botanik ve Tarım
+## 3. Coğrafya, Jeoloji, Ekoloji, Botanik ve Tarım
 
 * **Akman, Yıldırım.** (1990). *İç Anadolu Steplerinin Bitki Sosyolojisi, Ekolojisi ve Vejetasyon Katları*. Ankara: Palme Yayıncılık.
 * **Atalay, İbrahim.** (2002). *Türkiye Jeomorfolojisi ve Toprak Coğrafyası*. İzmir: Meta Basım.
 * **Avşar, Lokman.** (1995). *Kaman Yöresi Cevizlerinin (Juglans regia L.) Morfolojik ve Fenolojik Özellikleri Üzerine Araştırmalar*. Yüksek Lisans Tezi, Ankara Üniversitesi Fen Bilimleri Enstitüsü, Bahçe Bitkileri Anabilim Dalı.
+* **Bingöl, E.** (1989). *1:2.000.000 Ölçekli Türkiye Jeoloji Haritası ve Kırşehir Masifi İncelemeleri*. Ankara: MTA Genel Müdürlüğü Yayınları.
 * **Çelebioğlu, G. & Ferhatoğlu, Y.** (1992). "Kaman ve Çevresinde Yetiştirilen Üstün Vasıflı Ceviz Tiplerinin Seleksiyonu." *Türkiye I. Ulusal Bahçe Bitkileri Kongresi Bildirileri*, İzmir, Cilt 1, s. 431–435.
 * **Dönmez, Yusuf.** (1985). *İç Anadolu'nun İklim Özellikleri ve Kuraklık İndisleri*. İstanbul: İstanbul Üniversitesi Coğrafya Enstitüsü Yayınları.
 * **Ekim, Tuna vd.** (2000). *Türkiye Tehlike Altındaki Bitkileri Kırmızı Kitabı (Red Data Book of Turkish Plants)*. Ankara: TTKD Yayınları.
+* **Göncüoğlu, M. C. vd.** (1991). "Orta Anadolu Masifinin Batı Bölümünün Jeolojisi (Baranlı ve Kırşehir Granitoyidleri)." *MTA Dergisi*, 112, s. 1–28.
 * **Meteoroloji Genel Müdürlüğü (MGM):** *Kırşehir ve Kaman İstasyonları Çok Yıllık İklim Rasat Bültenleri (1960–2020)*. Ankara.
 * **Şen, S. Mehmet.** (2011). *Ceviz Yetiştiriciliği, Besin Değeri ve Folyo Asit Dinamiği*. Ankara: Güven Kitabevi.
 

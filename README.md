@@ -1,5 +1,10 @@
 # Bozkır Havzası Kaman: Arkeoloji, Coğrafya ve Yerel Hafıza Monografisi
 
+[![Veri & Sistem Doğrulama CI](https://github.com/arch-yunus/bozkir-havzasi-kaman/actions/workflows/validate-and-test.yml/badge.svg)](https://github.com/arch-yunus/bozkir-havzasi-kaman/actions/workflows/validate-and-test.yml)
+[![Lisans: CC BY-SA 4.0](https://img.shields.io/badge/Lisans-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+[![Veri Formatı: GeoJSON & CSV](https://img.shields.io/badge/CBS%20Veri-WGS84%20GeoJSON%20%7C%20CSV-blue.svg)](05_gorsel_ve_kartografik_arsiv/haritalar/)
+[![Web Atlas](https://img.shields.io/badge/Web%20Atlas-Canl%C4%B1%20Gezgin-success.svg)](index.html)
+
 ![Kaman-Kalehöyük Kazı Alanı ve Bozkır Stratigrafisi Banner](assets/banners/01_banner_kaman_kalehoyuk.jpg)
 
 > *"Anadolu'nun bağrında kazdığımız her tabaka, sadece toprağın değil; Doğu ile Batı'nın, kadim krallıkların ve göç yollarının kesiştiği insanlık hafızasının katmanlarıdır. Kalehöyük, bozkırın ortasında bin yıllar boyunca sönmemiş bir ocaktır."*  
@@ -11,6 +16,17 @@
 Bu araştırma külliyatı ve açık kaynak veri deposu; Orta Anadolu yaylasının stratejik kavşağında yer alan **Kırşehir / Kaman** mikro-havzasını arkeolojik, tarihsel, ekolojik, dilbilimsel, sosyolojik ve folklorik katmanlarıyla bir bütün olarak ele almaktadır. 
 
 Erken Tunç Çağı'ndan Demir Çağı'na, Hitit çekirdek bölgesinden Selçuklu-Osmanlı iskân hareketlerine, Millî Mücadele'nin Heyet-i Temsiliye intikal hattından Abdal/bozlak hafızasına uzanan bu monografi; Kaman'ı salt bir idari sınır olarak değil, Kızılırmak kavisinde şekillenmiş dinamik ve kadim bir **"Bozkır Havzası"** olarak modeller.
+
+---
+
+## 🗺️ İnteraktif Web CBS Atlası & Görsel Portali
+
+Depo bünyesinde; tüm höyüklerin, tümülüslerin, köylerin ve doğal alanların konumsal olarak incelenebildiği, istatistiki grafiklerin ve müzik/fenoloji matrislerinin yer aldığı tek sayfalık modern bir **Web CBS Atlası** ([index.html](index.html) / [docs/index.html](docs/index.html)) bulunmaktadır.
+
+- **Canlı Harita:** OpenStreetMap & Leaflet.js tabanlı, filtreli ve ölçüm destekli katmanlar.
+- **İstatistik Paneli:** Rakım histogramları, boy/oymak dağılımları, tarımsal desen grafikleri (Chart.js).
+- **Müzik Antropolojisi:** Bozlak perde ve makam düzenleri (Garip Ayağı).
+- **Agronomi Takvimi:** Kaman cevizi fenolojik döngüsü ve don koruma rehberi.
 
 ---
 
@@ -59,14 +75,8 @@ Erken Tunç Çağı'ndan Demir Çağı'na, Hitit çekirdek bölgesinden Selçukl
 > *"Bozkırda türkü söylemek bağırmak değildir; rüzgâra, dağa, ıssızlığa karşı içindeki yangını savurmaktır. Bozlak, yerleşik nizama sığmayan göçer Türkmen'in ötelerden getirdiği iç çekişidir."*  
 > — **Cahit Obruk**, *Bozkır Tezkereleri*
 
-> *"Ağlayı ağlayı vardım pınara / Kara taş bağrına basmış sinara / Anam yok ki dertlerime yana / Dağlar başı duman oldu görünmez..."*  
-> — *Kaman Yöresi Ağıt Derlemeleri*
-
 > *"Muharrem Usta çaldığı vakit saz ağlamazdı; toprağın altındaki su sızlar, gökteki turna rotasını şaşırırdı. Kırşehir ile Kaman arası sazın perdesinde ölçülür, kilometreyle değil."*  
 > — *Yerel Cönk ve Meclis Notları*
-
-> *"Geniş yolların tozu boğaza durur, ince patikaların ucunda bir garip mezarı kalır. Abdal dediğin, konduğu yeri yurt bilmez; sazın sesinin ulaştığı menzili sıla sayar."*  
-> — *Sözlü Bozlak Geleneği Saha Derlemesi*
 
 > *"Çekiç Ali zurnaya nefes vurduğunda Baranlı Dağı'nın yankısı düğün meydanına inerdi. Çekiç'in parmağındaki çeviklik, bozkır şahininin süzülüşü gibiydi."*  
 > — *Kaman Düğün Belleği Mülakatları*
@@ -89,12 +99,6 @@ Erken Tunç Çağı'ndan Demir Çağı'na, Hitit çekirdek bölgesinden Selçukl
 > *"Bozkır insanı ağacı sadece gölge bilmez; ağaç burada toprağın direği, rüzgârın freni, çölleşen yalnızlığın yegâne yeşil sığınağıdır."*  
 > — *İç Anadolu Step Ekolojisi Araştırmaları*
 
-> *"Tohum düşer toprağa, kuru tezek kokusu siner yaprağına. Kaman'ın cevizi ile insanı birdir: Dışı çetin ve nasırlı, içi ak ve bereketli."*  
-> — *Bölgesel Ekoloji Notları*
-
-> *"İç Anadolu'nun kışı bıçak gibidir; ayaz adamın iliğini keser. Ama o ayaz olmasa ne ceviz dinlenir ne de baharda toprağa düşen tohum uyanır. Soğuk bu havzanın terbiyecisidir."*  
-> — *Kaman Bahçıvanları Gözlemleri*
-
 > *"Geven dediğin kuru bir diken yumağı sanılır; oysa toprağı tırnaklarıyla tutan odur. Gevenin söküldüğü yerde rüzgâr tarlayı sıyırır götürür."*  
 > — *Bozkır Erozyon ve Toprak İncelemeleri*
 
@@ -110,12 +114,6 @@ Erken Tunç Çağı'ndan Demir Çağı'na, Hitit çekirdek bölgesinden Selçukl
 > *"Konar-göçerin evi sırtındadır; kışın Kızılırmak boyuna iner, yazın Baranlı'nın eteğine çadır kurar. Onlar için sınır hudut değil, suyun ve otun bittiği yerdir."*  
 > — **Prof. Dr. Faruk Sümer**
 
-> *"Dadaloğlu'm der de belim büküldü / Gözümün cevheri yere döküldü / Koçyiğitler vatanından söküldü / Ferman padişahın, dağlar bizimdir..."*  
-> — **Dadaloğlu** *(Bölgesel İskân Ağıtları)*
-
-> *"Kızılırmak dolanır gelir, Kırşehir'in böğrünü yalar geçer. Kaman sırtlarından ovaya bakan süvari, bin yıl önce hangi suyu gözlediyse Türkmen obası da o pınarın başına otağ kurmuştur."*  
-> — *Seyyah Notları ve Yerel Risale*
-
 > *"Savcılı koyundan esen yel, Hirfanlı'nın kokusunu getirir. Bozkırın ortasında deniz havası solumak istersen Savcılı'nın bağlarına varacaksın."*  
 > — *Kızılırmak Kıyısı Seyahat Notları*
 
@@ -130,7 +128,7 @@ Erken Tunç Çağı'ndan Demir Çağı'na, Hitit çekirdek bölgesinden Selçukl
          |                                   |                                   |
 [ ARKEOLOJİ & STRATİGRAFİ ]       [ COĞRAFYA & EKOLOJİ ]              [ HAFIZA & TOPLUM ]
   • Kalehöyük Kesintisiz Katmanları  • Kızılırmak Hidrolojisi & Toprak   • Bozlak & Abdal Ocakları
-  • Eski Tunç - Asur Koloni Çağı     • Baranlı Kütlesi & Mikroklima      • Danişmendli - Bozok İskânı
+  • Eski Tunç - Asur Koloni Çağı     • Baranlı Kütlesi & Plütonizma      • Danişmendli - Bozok İskânı
   • Demir Çağı & Frig Mirası         • Kaman Ceviz Ekolojisi (1-5)       • Toponimi & Söz Varlığı
   • JIAA Metodolojisi & Müze         • Step Vejetasyonu & Yaylalar       • Millî Mücadele Telgrafları
 ```
@@ -148,20 +146,23 @@ bozkir-havzasi-kaman/
 │   ├── 04_arkeometrik_veriler.md                # Radyokarbon (C14), botanik ve osteoloji tahlilleri
 │   ├── 05_japon_bahcesi_ekolojisi.md            # Mikasanomiya anı bahçesi ve peyzaj mimarisi
 │   ├── 06_muze_katalogu_ve_secme_eserler.md     # Kaman Kalehöyük Arkeoloji Müzesi seçme eserler envanteri
-│   └── 07_kalehoyuk_maden_ve_demir_cagi_metalurjisi.md # Tunç ve demir fırınları, cüruf ve çelik metalurjisi
+│   ├── 07_kalehoyuk_maden_ve_demir_cagi_metalurjisi.md # Tunç ve demir fırınları, cüruf ve çelik metalurjisi
+│   └── 08_bolgesel_tumulusler_ve_kaya_anitlari.md # Baranlı ve çevre tümülüsleri, kaya mezarları ve nekropoller
 ├── 02_cografya_ve_ekolojik_yapi/
 │   ├── 01_jeomorfoloji_ve_iklim.md              # Baranlı kütlesi, vadi tabanları, yağış rejimleri
 │   ├── 02_ceviz_botanigi_ve_tarim.md            # Kaman cevizi seleksiyonları ve toprak talepleri
 │   ├── 03_su_ve_kizilirmak_havzasi.md           # Akarsular, çeşmeler, göletler ve kuraklık verileri
 │   ├── 04_endemik_flora_ve_step.md              # Geven, yavşan otu ve step vejetasyonu envanteri
-│   └── 05_iklim_krizi_ve_havza_hidrolojisi.md   # Kuraklık indisleri (SPI/SPEI) ve yeraltı su krizi
+│   ├── 05_iklim_krizi_ve_havza_hidrolojisi.md   # Kuraklık indisleri (SPI/SPEI) ve yeraltı su krizi
+│   └── 06_baranli_dagi_jeolojisi_ve_plutonizim.md # Baranlı granitoyidi, skarn zonları ve jeomorfolojik evrim
 ├── 03_tarihsel_belgeler_ve_iskan/
 │   ├── 01_osmanli_tahrir_kayitlari.md           # 16. yy Bozok ve Kırşehir livası tahrir transkripsiyonları
 │   ├── 02_asiretler_ve_konar_gocer.md           # Türkmen boyları, cemaatler ve iskân fermanları
 │   ├── 03_vakfiyeler_ve_seriyye.md              # Cami, zaviye, medrese vakıf kayıtları ve mahkeme hüccetleri
 │   ├── 04_milli_mucadele_donemi.md              # Heyet-i Temsiliye'nin Kırşehir-Kaman temasları
 │   ├── 05_seyyahlar_ve_salnameler.md            # Evliya Çelebi, Salnameler ve Batılı seyyah kayıtları
-│   └── 06_kaman_nufus_defterleri_1831_1845.md   # 1831 Nüfus ve 1845 Temettuat hane gelirleri envanteri
+│   ├── 06_kaman_nufus_defterleri_1831_1845.md   # 1831 Nüfus ve 1845 Temettuat hane gelirleri envanteri
+│   └── 07_ataturk_kaman_gunlugu_1919.md         # 24-25 Aralık 1919 Mustafa Kemal Paşa Kaman konaklaması
 ├── 04_folklor_ve_sozlu_bellek/
 │   ├── 01_bozlak_ve_muzik_antropolojisi.md      # Abdal geleneği, perde düzenleri, ezgi kalıpları
 │   ├── 02_toponimi_ve_koy_monografileri.md      # Köy adlarının morfolojik ve tarihsel kökeni
@@ -169,17 +170,21 @@ bozkir-havzasi-kaman/
 │   ├── 04_agitlar_ve_destanlar.md               # Bölgesel ağıtlar, düğün adetleri ve seyirlik oyunlar
 │   ├── 05_kaman_divani_ve_siir_antolojisi.md    # Kaman, Baranlı ve Bozlak şiir antolojisi
 │   ├── 06_kaman_mutfagi_ve_gastronomi.md        # Geleneksel yemekler, cevizli çörek ve bağcılık mutfağı
-│   └── 07_halk_hekimligi_ve_etnobotanik.md      # Şifalı step bitkileri, ocaklık ve sınıkçılık geleneği
+│   ├── 07_halk_hekimligi_ve_etnobotanik.md      # Şifalı step bitkileri, ocaklık ve sınıkçılık geleneği
+│   └── 08_kaman_abdal_ocaklari_ve_muharrem_ertas.md # Muharrem Ertaş ekolü, soy kütükleri ve icra tavrı
 ├── 05_gorsel_ve_kartografik_arsiv/
 │   ├── haritalar/
 │   │   ├── README.md                            # Kartografik kaynaklar ve GIS metodolojisi
 │   │   ├── sit_alanlari.geojson                 # Koordinatlandırılmış höyük, anıt ve köy ağları (20 nokta)
-│   │   └── kaman_koyler_ve_nufus.csv            # 20 köyün rakım, boy kökeni ve ürün tabular veri seti
+│   │   ├── kaman_koyler_ve_nufus.csv            # 20 köyün rakım, boy kökeni ve ürün tabular veri seti
+│   │   └── kaman_arkeoloji_atlasi.kml           # Google Earth Pro ve CBS 3D KML envanter dosyası
 │   └── fotograflar/
 │       └── README.md                            # Görsel arşiv metaveri şablonu
 ├── assets/
 │   └── banners/                                 # Yüksek çözünürlüklü tematik monografi bannerları (5 adet)
 ├── docs/
+│   ├── index.html                              # GitHub Pages için Web CBS Portalı
+│   ├── kaman_analiz_raporu.md                  # Otomatik sentez ve mekânsal analiz raporu
 │   ├── kronoloji_cetveli.md                     # MÖ 2800'den günümüze karşılaştırmalı matris
 │   ├── ceviz_yetistiriciligi_rehberi.md         # Kaman cevizi agronomik bakım ve don koruma rehberi
 │   ├── sozlu_tarih_mulakat_protokolu.md         # Saha çalışması mülakat soru setleri ve protokolü
@@ -187,7 +192,14 @@ bozkir-havzasi-kaman/
 │       ├── kaman_ve_ag_kapitalizmi_analizi.md   # Bozkır sosyolojisi ile vadi tipi şebeke kapitalizmi analizi
 │       └── ahilik_ve_abdal_etik_matrisi.md      # Ahilik ve Abdal geleneği karşılaştırmalı etik matrisi
 ├── scripts/
-│   └── analyze_kaman_data.py                    # GeoJSON & CSV mekânsal istatistik ve mesafe analiz aracı
+│   ├── analyze_kaman_data.py                    # GeoJSON & CSV mekânsal istatistik, centroid ve mesafe analiz aracı
+│   ├── export_kml.py                            # GeoJSON & CSV'den 3D KML Google Earth üretim aracı
+│   ├── validate_dataset.py                      # CI/CD veri bütünlüğü, markdown linter ve link test aracı
+│   └── generate_report.py                       # Otomatik analiz ve sentez raporu üreticisi
+├── .github/
+│   └── workflows/
+│       └── validate-and-test.yml                # Çoklu Python sürümlerinde otomatik CI/CD test hattı
+├── index.html                                   # İnteraktif Web CBS Atlası ve Görsel Monografi Gezgini
 ├── CONTRIBUTING.md                              # Veri ekleme, kaynak gösterme ve transkripsiyon kılavuzu
 ├── BIBLIOGRAPHY.md                             # Kapsamlı bibliyografya ve kaynakça indeksi
 └── README.md
@@ -195,37 +207,26 @@ bozkir-havzasi-kaman/
 
 ---
 
-## 📖 Çekirdek Bibliyografya ve Referans Havuzu
+## 🛠️ CLI ve Analitik Araçların Kullanımı
 
-### Arkeoloji & Kazı Raporları
-* **Omura, Sachihiro.** (1989–2023). *"Kaman-Kalehöyük Kazıları"*, Kazı Sonuçları Toplantıları, T.C. Kültür ve Turizm Bakanlığı Yayınları.
-* **Omura, S.** (1992–2020). *"Anatolian Archaeological Studies (Gassan Çukuru Araştırmaları)"*, Vol. I-XXIX, Japanese Institute of Anatolian Archaeology (JIAA).
-* **Matsumura, Kimiyoshi.** (2005). *"Regional Characteristics of Central Anatolian Iron Age Ceramics: The View from Kaman-Kalehöyük"*, Japanese Institute of Anatolian Archaeology.
-* **Fairbairn, A. & Omura, S.** (2005). *"Archaeobotanical Research at Kaman-Kalehöyük: Plant Use in Central Anatolia"*, Antiquity, 79(304).
-* **Kondo, J. & Nakao, H.** (2012). *"Geomorphological Survey and Ancient Route Reconstruction around Kaman Basin"*, Anatolian Studies.
+Depodaki Python araçları herhangi bir harici kütüphane bağımlılığı olmaksızın standart Python kütüphanesiyle çalışır:
 
-### Tarih, İskân ve Sosyoloji
-* **Tarım, Cevat Hakkı.** (1948). *Kırşehir Tarihi Üzerine Araştırmalar*, Kırşehir Vilayet Matbaası.
-* **Sümer, Faruk.** (1999). *Oğuzlar (Türkmenler): Tarihleri, Boy Teşkilatı, Destanları*, Türk Dünyası Araştırmaları Vakfı.
-* **Halaçoğlu, Yusuf.** (2009). *Anadolu'da Aşiretler, Cemaatler, Oymaklar (1453-1650)*, Türk Tarih Kurumu Yayınları.
-* **Dulkadir, Hilmi.** (1997). *İç Anadolu'da Türkmen Aşiretleri ve Kırşehir Havzası*, Kültür Bakanlığı HAGEM Yayınları.
-* **Gökbel, Ahmet.** (2007). *Kırşehir ve Çevresinde Abdallar*, Berikan Yayınevi.
+```bash
+# 1. Veri setleri, Markdown bağlantıları ve görsel bütünlüğünü test edin:
+python scripts/validate_dataset.py
 
-### Ekoloji, Coğrafya ve Tarım
-* **Avşar, Lokman.** (1995). *Kaman Yöresi Cevizlerinin Morfolojik ve Fenolojik Özellikleri Üzerine Araştırmalar*, Yüksek Lisans Tezi, Ankara Üniversitesi Fen Bilimleri Enstitüsü.
-* **Akman, Y.** (1990). *İç Anadolu Steplerinin Bitki Sosyolojisi ve Ekolojisi*, Palme Yayıncılık.
-* **Atalay, İbrahim.** (2002). *Türkiye Jeomorfolojisi ve Toprak Coğrafyası*, Meta Basım.
+# 2. Mekânsal istatistikler, mesafe matrisleri ve hipsometrik analizleri çalıştırın:
+python scripts/analyze_kaman_data.py
 
----
+# 3. Google Earth ve CBS yazılımları için KML dosyası üretin:
+python scripts/export_kml.py
 
-## 🔍 Katkı Metodolojisi ve Araştırma Standartları
-
-1. **Akademik Tarafsızlık ve Doğrulanabilirlik:** Eklenen her araştırma metni; birincil arşiv belgesine (BOA, Şer'iyye Sicilleri), hakemli kazı raporlarına ya da ses/görüntü kaydı arşivlenmiş sözlü tarih mülakatlarına dayanmalıdır.
-2. **Transkripsiyon Kuralları:** Osmanlı Türkçesi arşiv vesikaları Latinize edilirken Türk Tarih Kurumu ve İslam Ansiklopedisi transkripsiyon elifbası standartlarına tam uyum sağlanmalıdır.
-3. **CBS ve Açık Veri Formatı:** Konumsal bilgi içeren her höyük, tümülüs, su kaynağı veya tarihi yapı `05_gorsel_ve_kartografik_arsiv/haritalar/` altına açık kaynak `GeoJSON` veya `CSV` (WGS84 koordinat sistemiyle) formatında işlenmelidir.
+# 4. Otomatik sentez ve analiz raporunu güncelleyin:
+python scripts/generate_report.py
+```
 
 ---
 
 ## ⚖️ Lisans
 
-Bu külliyatta üretilen araştırma metinleri, dizinler, transkripsiyonlar ve saha notları [CC BY-SA 4.0 (Creative Commons Alıntı-BenzerPaylaşım 4.0 Uluslararası)](https://creativecommons.org/licenses/by-sa/4.0/) lisansı ile kamuya sunulmaktadır. Alıntılanan akademik makalelerin, resmi kazı planlarının ve telifli fotoğrafların mülkiyeti ilgili yazar, enstitü ve kurumlara aittir.
+Bu külliyatta üretilen araştırma metinleri, dizinler, transkripsiyonlar ve saha notları [CC BY-SA 4.0 (Creative Commons Alıntı-BenzerPaylaşım 4.0 Uluslararası)](https://creativecommons.org/licenses/by-sa/4.0/) lisansı ile kamuya sunulmaktadır.

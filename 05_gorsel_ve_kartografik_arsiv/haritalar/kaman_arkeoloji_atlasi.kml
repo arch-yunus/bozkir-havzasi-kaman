@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bozkır Havzası Kaman - Arkeoloji ve Kültür Atlası</name>
+    <description><![CDATA[Kırşehir / Kaman mikro-havzası arkeolojik sitleri, tümülüsleri, tarihi köyleri ve ekolojik odak noktaları.]]></description>
+    <!-- Stiller -->
+    <Style id="arkeolojik_sit">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.3</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="koy_yerlesimi">
+      <IconStyle>
+        <color>ff00aa00</color>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/shapes/ranger_station.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="dogal_sit">
+      <IconStyle>
+        <color>ffffaa00</color>
+        <scale>1.2</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/shapes/triangle.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Sit Alanları ve Odak Noktaları</name>
+      <Placemark>
+        <name>Kaman-Kalehöyük</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Kaman-Kalehöyük</h3>
+          <p><b>Kategori:</b> Arkeolojik Sit</p>
+          <p><b>Dönem:</b> Erken Tunç - Osmanlı (MÖ 2800 - MS 17. yy)</p>
+          <p><b>Rakım:</b> 1015 m</p>
+          <p><b>Köy/Mevkii:</b> Çağırkan</p>
+          <p><b>Statü:</b> 1. Derece Arkeolojik Sit</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Japon Anadolu Arkeoloji Enstitüsü (JIAA) tarafından 1986'dan beri kesintisiz kazılan stratigrafik merkez höyük.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.7236,39.3582,1015</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mikasanomiya Anı Bahçesi (Japon Bahçesi)</name>
+        <styleUrl>#dogal_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Mikasanomiya Anı Bahçesi (Japon Bahçesi)</h3>
+          <p><b>Kategori:</b> Peyzaj ve Kültür Varlığı</p>
+          <p><b>Dönem:</b> Cumhuriyet Dönemi (1993-2010)</p>
+          <p><b>Rakım:</b> 1020 m</p>
+          <p><b>Köy/Mevkii:</b> Çağırkan</p>
+          <p><b>Statü:</b> Tescilli Park ve Anı Bahçesi</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Altes Prens Takahito Mikasa anısına kurulan, Japonya dışındaki en büyük Japon gezinti bahçelerinden biri.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.7258,39.3595,1020</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaman Kalehöyük Arkeoloji Müzesi</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Kaman Kalehöyük Arkeoloji Müzesi</h3>
+          <p><b>Kategori:</b> Müze Yapısı</p>
+          <p><b>Dönem:</b> Modern (2010)</p>
+          <p><b>Rakım:</b> 1018 m</p>
+          <p><b>Köy/Mevkii:</b> Çağırkan</p>
+          <p><b>Statü:</b> T.C. Kültür ve Turizm Bakanlığı İhtisas Müzesi</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Höyük mimarisinde inşa edilmiş yeşil çatılı uluslararası standartta arkeoloji müzesi.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.7242,39.3588,1018</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Büklükale</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Büklükale</h3>
+          <p><b>Kategori:</b> Arkeolojik Sit / Garnizon</p>
+          <p><b>Dönem:</b> Hitit İmparatorluğu - Demir Çağı (MÖ 2000 - 600)</p>
+          <p><b>Rakım:</b> 820 m</p>
+          <p><b>Köy/Mevkii:</b> Köprüköy / Karakeçili Sınırı</p>
+          <p><b>Statü:</b> 1. Derece Arkeolojik Sit</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Kızılırmak nehir geçidini (Çeşnigir Boğazı) denetleyen stratejik Hitit idari merkezi ve kalesi.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.4385,39.6012,820</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Yassıhöyük</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Yassıhöyük</h3>
+          <p><b>Kategori:</b> Arkeolojik Sit</p>
+          <p><b>Dönem:</b> Erken Tunç - Frig / Demir Çağı</p>
+          <p><b>Rakım:</b> 980 m</p>
+          <p><b>Köy/Mevkii:</b> Yassıhöyük</p>
+          <p><b>Statü:</b> 1. Derece Arkeolojik Sit</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Kaman güney tarımsal havzasını ve Savcılı vadisi girişini kontrol eden geniş höyük yerleşimi.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.7012,39.2945,980</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Baranlı Dağı Zirvesi ve Gözetleme Kulesi Kalıntıları</name>
+        <styleUrl>#dogal_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Baranlı Dağı Zirvesi ve Gözetleme Kulesi Kalıntıları</h3>
+          <p><b>Kategori:</b> Doğal Sit ve Arkeolojik Alan</p>
+          <p><b>Dönem:</b> Klasik Çağlar - Ortaçağ</p>
+          <p><b>Rakım:</b> 1677 m</p>
+          <p><b>Köy/Mevkii:</b> Baranlı</p>
+          <p><b>Statü:</b> Doğal Sit Alanı</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Kaman havzasının en yüksek plütonik kütlesi; yangın kulesi ve antik sinyal/gözetleme mevki.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.8214,39.4125,1677</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Savcılı Büyükoba ve Hirfanlı Sahil Kuşağı</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Savcılı Büyükoba ve Hirfanlı Sahil Kuşağı</h3>
+          <p><b>Kategori:</b> Ekolojik ve Rekreasyon Alanı</p>
+          <p><b>Dönem:</b> Osmanlı - Günümüz</p>
+          <p><b>Rakım:</b> 860 m</p>
+          <p><b>Köy/Mevkii:</b> Savcılı Büyükoba</p>
+          <p><b>Statü:</b> Turizm ve Koruma Sahası</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Hirfanlı Baraj Gölü kıyısında yer alan, mikroklima etkisiyle bağcılık ve meyveciliğin geliştiği koy.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.5823,39.2456,860</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kargın Meşesi Tümülüsleri</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Kargın Meşesi Tümülüsleri</h3>
+          <p><b>Kategori:</b> Arkeolojik Sit / Nekropol</p>
+          <p><b>Dönem:</b> Demir Çağı / Frig - Helenistik</p>
+          <p><b>Rakım:</b> 1130 m</p>
+          <p><b>Köy/Mevkii:</b> Kargın Meşesi</p>
+          <p><b>Statü:</b> 1. Derece Arkeolojik Sit</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Baranlı Dağı eteklerinde yerel aristokratlara ait yığma mezar tepeleri.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.7845,39.389,1130</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Çağırkan Baba Türbesi ve Zaviyesi Kalıntısı</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Çağırkan Baba Türbesi ve Zaviyesi Kalıntısı</h3>
+          <p><b>Kategori:</b> Dini / Tarihi Anıt</p>
+          <p><b>Dönem:</b> Selçuklu - Erken Osmanlı (14. yy)</p>
+          <p><b>Rakım:</b> 1025 m</p>
+          <p><b>Köy/Mevkii:</b> Çağırkan</p>
+          <p><b>Statü:</b> Taşınmaz Kültür Varlığı</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Horasan erenlerinden kabul edilen Çağırkan Baba adına kurulan zaviye ve türbe sahası.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.718,39.356,1025</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ömerhacılı Höyüğü</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Ömerhacılı Höyüğü</h3>
+          <p><b>Kategori:</b> Arkeolojik Sit</p>
+          <p><b>Dönem:</b> Tunç Çağı - Roma</p>
+          <p><b>Rakım:</b> 995 m</p>
+          <p><b>Köy/Mevkii:</b> Ömerhacılı</p>
+          <p><b>Statü:</b> 1. Derece Arkeolojik Sit</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Kaman'ın kuzeybatı tarım kuşağında konumlanan yerleşim höyüğü.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.721,39.362,995</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaman Tarihî Hükümet Konağı ve Çarşı Meydanı</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Kaman Tarihî Hükümet Konağı ve Çarşı Meydanı</h3>
+          <p><b>Kategori:</b> Kentsel Bellek / İdari</p>
+          <p><b>Dönem:</b> Geç Osmanlı - Erken Cumhuriyet (1919)</p>
+          <p><b>Rakım:</b> 1005 m</p>
+          <p><b>Köy/Mevkii:</b> Kaman Merkez</p>
+          <p><b>Statü:</b> Kentsel Sit / Bellek Alanı</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Mustafa Kemal Paşa'nın 25 Aralık 1919'da seğmenler tarafından karşılandığı tarihî merkez.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.7175,39.3552,1005</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Çadırlıhacıbayram Tarihî Köy Çeşmesi ve Yerleşimi</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Çadırlıhacıbayram Tarihî Köy Çeşmesi ve Yerleşimi</h3>
+          <p><b>Kategori:</b> Tarihî Yapı / İskân</p>
+          <p><b>Dönem:</b> Osmanlı (18. yy)</p>
+          <p><b>Rakım:</b> 960 m</p>
+          <p><b>Köy/Mevkii:</b> Çadırlıhacıbayram</p>
+          <p><b>Statü:</b> Tescilli Çeşme Mimarisi</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Göçebe Türkmen obalarının yerleşik düzene geçişini simgeleyen tarihî çeşme ve cami.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.642,39.321,960</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kurancılı Beldesi ve Antik Yerleşim İzleri</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Kurancılı Beldesi ve Antik Yerleşim İzleri</h3>
+          <p><b>Kategori:</b> Arkeolojik ve Tarihsel Alan</p>
+          <p><b>Dönem:</b> Roma - Selçuklu - Osmanlı</p>
+          <p><b>Rakım:</b> 1080 m</p>
+          <p><b>Köy/Mevkii:</b> Kurancılı</p>
+          <p><b>Statü:</b> Tescilli İskân Alanı</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Baranlı eteklerinde eski su yolları ve kaya mezarları barındıran yerleşim.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.753,39.421,1080</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hirfanlı Barajı Gövdesi ve Hidroelektrik Santrali</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Hirfanlı Barajı Gövdesi ve Hidroelektrik Santrali</h3>
+          <p><b>Kategori:</b> Endüstriyel Miras ve Su Yapısı</p>
+          <p><b>Dönem:</b> Cumhuriyet (1953-1959)</p>
+          <p><b>Rakım:</b> 850 m</p>
+          <p><b>Köy/Mevkii:</b> Hirfanlı</p>
+          <p><b>Statü:</b> Stratejik Su Yapısı</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>İç Anadolu'nun hidrolojik ve mikroklimatik çehresini değiştiren anıtsal baraj gövdesi.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.521,39.271,850</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bayındır Köyü Tarihî İskân Alanı</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Bayındır Köyü Tarihî İskân Alanı</h3>
+          <p><b>Kategori:</b> Tarihsel İskân</p>
+          <p><b>Dönem:</b> Selçuklu - Osmanlı</p>
+          <p><b>Rakım:</b> 1030 m</p>
+          <p><b>Köy/Mevkii:</b> Bayındır</p>
+          <p><b>Statü:</b> Geleneksel Kırsal Doku</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Oğuzların Bayındır boyunun adını taşıyan kadim yerleşim mevkii.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.612,39.385,1030</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tatık Köyü Kaya Yerleşimleri ve Mağaralar</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Tatık Köyü Kaya Yerleşimleri ve Mağaralar</h3>
+          <p><b>Kategori:</b> Arkeolojik Sit</p>
+          <p><b>Dönem:</b> Bizans - Erken Hristiyanlık</p>
+          <p><b>Rakım:</b> 1110 m</p>
+          <p><b>Köy/Mevkii:</b> Tatık</p>
+          <p><b>Statü:</b> Arkeolojik Alan</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Volkanik tüf kayalıklara oyulmuş kilise, şapel ve sığınak odaları.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.689,39.442,1110</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Savcılı Bağbaşı Tarihî Bağ Sahası</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Savcılı Bağbaşı Tarihî Bağ Sahası</h3>
+          <p><b>Kategori:</b> Tarımsal Miras</p>
+          <p><b>Dönem:</b> Antik Çağ - Günümüz</p>
+          <p><b>Rakım:</b> 870 m</p>
+          <p><b>Köy/Mevkii:</b> Savcılı Bağbaşı</p>
+          <p><b>Statü:</b> Geleneksel Bağ Alanı</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Savcılı üzümü, pekmez ve köftür üretiminin merkezi olan tarihî yamaç terasları.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.564,39.215,870</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>İkizler Höyüğü</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">İkizler Höyüğü</h3>
+          <p><b>Kategori:</b> Arkeolojik Sit</p>
+          <p><b>Dönem:</b> Tunç Çağı</p>
+          <p><b>Rakım:</b> 990 m</p>
+          <p><b>Köy/Mevkii:</b> İkizler</p>
+          <p><b>Statü:</b> 1. Derece Arkeolojik Sit</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Kaman'ın güneydoğusunda yer alan çift tepeli höyük formasyonu.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.791,39.312,990</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kaman Merkez Ceviz Araştırma ve Islah İstasyonu</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Kaman Merkez Ceviz Araştırma ve Islah İstasyonu</h3>
+          <p><b>Kategori:</b> Agronomik Araştırma Alanı</p>
+          <p><b>Dönem:</b> 1975 - Günümüz</p>
+          <p><b>Rakım:</b> 1010 m</p>
+          <p><b>Köy/Mevkii:</b> Kaman Merkez</p>
+          <p><b>Statü:</b> Tarımsal Gen Bankası Sahası</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Kaman 1-5 tescilli ceviz genotiplerinin anaçlarının muhafaza edildiği seleksiyon parseli.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.705,39.375,1010</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Demirli Köyü Su Değirmenleri Mevkii</name>
+        <styleUrl>#arkeolojik_sit</styleUrl>
+        <description><![CDATA[
+        <div style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5;">
+          <h3 style="margin-top:0; color: #1e3a8a;">Demirli Köyü Su Değirmenleri Mevkii</h3>
+          <p><b>Kategori:</b> Kültür Varlığı</p>
+          <p><b>Dönem:</b> Osmanlı (19. yy)</p>
+          <p><b>Rakım:</b> 1050 m</p>
+          <p><b>Köy/Mevkii:</b> Demirli</p>
+          <p><b>Statü:</b> Taşınmaz Kültür Varlığı</p>
+          <hr style="border: 0; border-top: 1px solid #ccc;"/>
+          <p>Şer'iyye sicillerinde adı geçen tarihi su değirmenleri kalıntıları.</p>
+        </div>
+        ]]></description>
+        <Point>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <coordinates>33.63,39.46,1050</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

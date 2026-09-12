@@ -1,0 +1,40 @@
+name: Bozkır Havzası Kaman - Veri & Sistem Doğrulama CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate:
+    name: Veri Seti & Dokümantasyon Testleri
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+    - name: Depoyu Klonla
+      uses: actions/checkout@v4
+
+    - name: Python Ortamını Kur (${{ matrix.python-version }})
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Veri Seti ve Bağlantı Bütünlüğü Testini Çalıştır
+      run: |
+        python scripts/validate_dataset.py
+
+    - name: Mekânsal İstatistik Analiz Aracını Çalıştır
+      run: |
+        python scripts/analyze_kaman_data.py
+
+    - name: KML Dışa Aktarıcısını Çalıştır
+      run: |
+        python scripts/export_kml.py
+
+    - name: Otomatik Sentez Raporu Üreticisini Çalıştır
+      run: |
+        python scripts/generate_report.py

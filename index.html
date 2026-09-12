@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bozkır Havzası Kaman | Dijital Arkeoloji ve Kültür Atlası</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fcf8f2',
+              100: '#f7efe1',
+              500: '#8b5a2b',
+              600: '#6f441b',
+              700: '#533111',
+              800: '#38200a',
+              900: '#1f1105'
+            },
+            steppe: {
+              100: '#f4f1ea',
+              200: '#e5dec9',
+              500: '#b09f7a',
+              800: '#3f382a'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    #map { height: 600px; z-index: 10; }
+    .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #b09f7a; border-radius: 3px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #8b5a2b; }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased font-sans flex flex-col min-h-screen">
+
+  <!-- Üst Başlık (Header) -->
+  <header class="bg-gradient-to-r from-stone-900 via-stone-800 to-brand-900 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="p-2 bg-amber-600/30 rounded-lg border border-amber-500/40 text-amber-400">
+          <i class="fa-solid fa-monument text-xl"></i>
+        </span>
+        <div>
+          <h1 class="text-lg sm:text-xl font-bold tracking-tight">BOZKIR HAVZASI KAMAN</h1>
+          <p class="text-xs text-stone-300">Arkeoloji, Coğrafya ve Yerel Hafıza Dijital Atlası</p>
+        </div>
+      </div>
+
+      <!-- Navigasyon Sekmeleri -->
+      <nav class="hidden md:flex items-center space-x-1">
+        <button onclick="switchTab('map-view')" id="nav-map-view" class="tab-btn px-3 py-1.5 rounded-md text-sm font-medium transition bg-amber-600 text-white">
+          <i class="fa-solid fa-map-location-dot mr-1.5"></i> CBS Harita
+        </button>
+        <button onclick="switchTab('analytics-view')" id="nav-analytics-view" class="tab-btn px-3 py-1.5 rounded-md text-sm font-medium transition hover:bg-stone-700/60 text-stone-300">
+          <i class="fa-solid fa-chart-pie mr-1.5"></i> İstatistik & Grafikler
+        </button>
+        <button onclick="switchTab('monograph-view')" id="nav-monograph-view" class="tab-btn px-3 py-1.5 rounded-md text-sm font-medium transition hover:bg-stone-700/60 text-stone-300">
+          <i class="fa-solid fa-book-open mr-1.5"></i> Monografi Külliyatı
+        </button>
+        <button onclick="switchTab('bozlak-view')" id="nav-bozlak-view" class="tab-btn px-3 py-1.5 rounded-md text-sm font-medium transition hover:bg-stone-700/60 text-stone-300">
+          <i class="fa-solid fa-guitar mr-1.5"></i> Bozlak & Sözlü Bellek
+        </button>
+        <button onclick="switchTab('walnut-view')" id="nav-walnut-view" class="tab-btn px-3 py-1.5 rounded-md text-sm font-medium transition hover:bg-stone-700/60 text-stone-300">
+          <i class="fa-solid fa-seedling mr-1.5"></i> Kaman Cevizi
+        </button>
+      </nav>
+
+      <div class="flex items-center space-x-2">
+        <a href="https://github.com/arch-yunus/bozkir-havzasi-kaman" target="_blank" class="px-3 py-1.5 bg-stone-700/60 hover:bg-stone-600 rounded-lg text-xs font-semibold text-stone-200 transition border border-stone-600 flex items-center">
+          <i class="fa-brands fa-github text-sm mr-1.5"></i> GitHub Repo
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobil Sekme Menüsü -->
+  <div class="md:hidden bg-stone-800 text-stone-300 flex overflow-x-auto px-2 py-2 space-x-2 border-b border-stone-700">
+    <button onclick="switchTab('map-view')" class="tab-btn px-3 py-1 bg-amber-600 text-white rounded text-xs whitespace-nowrap"><i class="fa-solid fa-map"></i> Harita</button>
+    <button onclick="switchTab('analytics-view')" class="tab-btn px-3 py-1 rounded text-xs whitespace-nowrap"><i class="fa-solid fa-chart-pie"></i> İstatistik</button>
+    <button onclick="switchTab('monograph-view')" class="tab-btn px-3 py-1 rounded text-xs whitespace-nowrap"><i class="fa-solid fa-book"></i> Monografi</button>
+    <button onclick="switchTab('bozlak-view')" class="tab-btn px-3 py-1 rounded text-xs whitespace-nowrap"><i class="fa-solid fa-guitar"></i> Bozlak</button>
+    <button onclick="switchTab('walnut-view')" class="tab-btn px-3 py-1 rounded text-xs whitespace-nowrap"><i class="fa-solid fa-seedling"></i> Ceviz</button>
+  </div>
+
+  <!-- Ana İçerik Alanı -->
+  <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 lg:p-8">
+
+    <!-- 1. CBS HARİTA SEKMESİ -->
+    <section id="map-view" class="tab-content block">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Harita ve Kontroller -->
+        <div class="lg:col-span-8 flex flex-col space-y-4">
+          <div class="bg-white rounded-2xl shadow-sm border border-stone-200 p-4">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+              <div>
+                <h2 class="text-lg font-bold text-stone-900 flex items-center">
+                  <i class="fa-solid fa-earth-americas text-amber-700 mr-2"></i>
+                  Kaman Mikro-Havzası CBS Haritası
+                </h2>
+                <p class="text-xs text-stone-500">WGS84 Koordinat Sistemi | 20 Tescilli Odak & Kırsal Ağ</p>
+              </div>
+
+              <!-- Katman Filtreleri -->
+              <div class="flex items-center space-x-2">
+                <select id="categoryFilter" onchange="filterMap()" class="text-xs bg-stone-50 border border-stone-300 rounded-lg px-2.5 py-1.5 font-medium text-stone-700 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+                  <option value="ALL">Tüm Kategoriler (20)</option>
+                  <option value="Arkeolojik Sit">Arkeolojik Höyük & Garnizon</option>
+                  <option value="Tümülüs">Tümülüsler & Kaya Mezarları</option>
+                  <option value="Köy / İskân">Kırsal İskân ve Köyler</option>
+                  <option value="Doğal / Ekolojik">Doğal Sit & Bahçeler</option>
+                </select>
+                <button onclick="resetMapView()" class="px-2.5 py-1.5 bg-stone-100 hover:bg-stone-200 text-stone-700 text-xs font-semibold rounded-lg border border-stone-300" title="Haritayı Sıfırla">
+                  <i class="fa-solid fa-crosshairs"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Harita Konteyneri -->
+            <div id="map" class="rounded-xl overflow-hidden border border-stone-200 shadow-inner"></div>
+
+            <!-- Alt Harita Bilgi Çubuğu -->
+            <div class="mt-3 flex flex-wrap items-center justify-between text-xs text-stone-500 gap-2 border-t border-stone-100 pt-2">
+              <div class="flex items-center space-x-4">
+                <span class="flex items-center"><span class="w-3 h-3 rounded-full bg-red-600 mr-1.5"></span> Arkeolojik Sit</span>
+                <span class="flex items-center"><span class="w-3 h-3 rounded-full bg-emerald-600 mr-1.5"></span> Ekoloji/Bahçe</span>
+                <span class="flex items-center"><span class="w-3 h-3 rounded-full bg-amber-600 mr-1.5"></span> Tarihi Yerleşim</span>
+                <span class="flex items-center"><span class="w-3 h-3 rounded-full bg-blue-600 mr-1.5"></span> Su & Altyapı</span>
+              </div>
+              <div id="activePointsCount" class="font-bold text-stone-700">20 Nokta Gösteriliyor</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Yan Panel: Nokta Listesi & Arama -->
+        <div class="lg:col-span-4 flex flex-col space-y-4">
+          <div class="bg-white rounded-2xl shadow-sm border border-stone-200 p-4 flex flex-col h-full max-h-[660px]">
+            <h3 class="text-sm font-bold text-stone-900 mb-2 flex items-center justify-between">
+              <span><i class="fa-solid fa-list-check text-amber-700 mr-1.5"></i> Envanter Rehberi</span>
+              <span class="text-xs font-normal text-stone-400">Canlı Arama</span>
+            </h3>
+
+            <!-- Arama Kutusu -->
+            <div class="relative mb-3">
+              <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-stone-400 text-xs"></i>
+              <input type="text" id="searchInput" onkeyup="searchPoints()" placeholder="Höyük, köy veya dönem ara..." class="w-full pl-8 pr-3 py-1.5 text-xs bg-stone-50 border border-stone-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none" />
+            </div>
+
+            <!-- Kaydırılabilir Liste -->
+            <div id="pointsList" class="flex-1 overflow-y-auto space-y-2 pr-1 custom-scrollbar text-xs">
+              <!-- JS ile doldurulacak -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. İSTATİSTİK & GRAFİKLER SEKMESİ -->
+    <section id="analytics-view" class="tab-content hidden">
+      <div class="space-y-6">
+        
+        <!-- KPI Kartları -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div class="bg-white p-4 rounded-xl border border-stone-200 shadow-sm">
+            <span class="text-xs text-stone-500 font-medium">Toplam Sit/Odak</span>
+            <div class="text-2xl font-bold text-stone-900 mt-1">20 Nokta</div>
+            <span class="text-[11px] text-emerald-600 font-medium">MÖ 2800 - Günümüz</span>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-stone-200 shadow-sm">
+            <span class="text-xs text-stone-500 font-medium">Havza Rakım Aralığı</span>
+            <div class="text-2xl font-bold text-amber-700 mt-1">820 - 1677 m</div>
+            <span class="text-[11px] text-stone-400 font-medium">Δ 857 m Yükseklik Farkı</span>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-stone-200 shadow-sm">
+            <span class="text-xs text-stone-500 font-medium">Kayıtlı Kırsal İskân</span>
+            <div class="text-2xl font-bold text-stone-900 mt-1">20 Köy/Belde</div>
+            <span class="text-[11px] text-blue-600 font-medium">17 Farklı Türkmen Boyu</span>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-stone-200 shadow-sm">
+            <span class="text-xs text-stone-500 font-medium">Ceviz Üretim Havzası</span>
+            <div class="text-2xl font-bold text-emerald-700 mt-1">9 Köyde Lider</div>
+            <span class="text-[11px] text-stone-400 font-medium">Kaman-1 / Kaman-5 Tescili</span>
+          </div>
+        </div>
+
+        <!-- Grafikler Izgarası -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm">
+            <h3 class="text-sm font-bold text-stone-900 mb-3 flex items-center">
+              <i class="fa-solid fa-chart-column text-amber-600 mr-2"></i>
+              Rakım Kuşaklarına Göre Yerleşim Dağılımı
+            </h3>
+            <div class="h-64">
+              <canvas id="elevationChart"></canvas>
+            </div>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm">
+            <h3 class="text-sm font-bold text-stone-900 mb-3 flex items-center">
+              <i class="fa-solid fa-chart-pie text-emerald-600 mr-2"></i>
+              Tarımsal ve Ekonomik Üretim Deseni
+            </h3>
+            <div class="h-64">
+              <canvas id="productChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. MONOGRAFİ KÜLLİYATI SEKMESİ -->
+    <section id="monograph-view" class="tab-content hidden">
+      <div class="bg-white rounded-2xl border border-stone-200 p-6 shadow-sm">
+        <h2 class="text-xl font-bold text-stone-900 mb-4 flex items-center">
+          <i class="fa-solid fa-book-bookmark text-amber-700 mr-2.5"></i>
+          Monografi Bölüm Rehberi ve Araştırma Kütüphanesi
+        </h2>
+        <p class="text-sm text-stone-600 mb-6 leading-relaxed">
+          Kaman mikro-havzasını konu alan 4 ana araştırma disiplini ve 28 akademik bölümden oluşan açık kaynak monografi koleksiyonu.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <!-- Arkeoloji -->
+          <div class="p-4 bg-stone-50 rounded-xl border border-stone-200">
+            <div class="flex items-center space-x-2 text-red-700 font-bold text-sm mb-3">
+              <i class="fa-solid fa-trowel-bricks"></i>
+              <span>01. Arkeoloji & Kazılar</span>
+            </div>
+            <ul class="text-xs space-y-2 text-stone-700">
+              <li class="hover:text-amber-700">• 01. Kalehöyük Stratigrafisi</li>
+              <li class="hover:text-amber-700">• 02. JIAA Enstitü Tarihçesi</li>
+              <li class="hover:text-amber-700">• 03. Büklükale & Yassıhöyük</li>
+              <li class="hover:text-amber-700">• 04. Arkeometrik Veriler</li>
+              <li class="hover:text-amber-700">• 05. Japon Bahçesi Ekolojisi</li>
+              <li class="hover:text-amber-700">• 06. Müze Kataloğu</li>
+              <li class="hover:text-amber-700">• 07. Demir Çağı Metalurjisi</li>
+              <li class="hover:text-amber-700 font-semibold text-amber-800">• 08. Bölgesel Tümülüsler (Yeni)</li>
+            </ul>
+          </div>
+
+          <!-- Coğrafya -->
+          <div class="p-4 bg-stone-50 rounded-xl border border-stone-200">
+            <div class="flex items-center space-x-2 text-emerald-700 font-bold text-sm mb-3">
+              <i class="fa-solid fa-mountain-sun"></i>
+              <span>02. Coğrafya & Ekoloji</span>
+            </div>
+            <ul class="text-xs space-y-2 text-stone-700">
+              <li class="hover:text-amber-700">• 01. Jeomorfoloji ve İklim</li>
+              <li class="hover:text-amber-700">• 02. Ceviz Botaniği ve Tarım</li>
+              <li class="hover:text-amber-700">• 03. Su & Kızılırmak Havzası</li>
+              <li class="hover:text-amber-700">• 04. Endemik Flora ve Step</li>
+              <li class="hover:text-amber-700">• 05. İklim Krizi & Hidroloji</li>
+              <li class="hover:text-amber-700 font-semibold text-amber-800">• 06. Baranlı Jeolojisi (Yeni)</li>
+            </ul>
+          </div>
+
+          <!-- Tarih & İskân -->
+          <div class="p-4 bg-stone-50 rounded-xl border border-stone-200">
+            <div class="flex items-center space-x-2 text-amber-700 font-bold text-sm mb-3">
+              <i class="fa-solid fa-scroll"></i>
+              <span>03. Tarih & İskân</span>
+            </div>
+            <ul class="text-xs space-y-2 text-stone-700">
+              <li class="hover:text-amber-700">• 01. Osmanlı Tahrir Kayıtları</li>
+              <li class="hover:text-amber-700">• 02. Aşiretler ve Konar-Göçer</li>
+              <li class="hover:text-amber-700">• 03. Vakfiyeler ve Şer'iyye</li>
+              <li class="hover:text-amber-700">• 04. Millî Mücadele Dönemi</li>
+              <li class="hover:text-amber-700">• 05. Seyyahlar ve Salnameler</li>
+              <li class="hover:text-amber-700">• 06. Nüfus Defterleri (1831-45)</li>
+              <li class="hover:text-amber-700 font-semibold text-amber-800">• 07. Atatürk Kaman Günlüğü (Yeni)</li>
+            </ul>
+          </div>
+
+          <!-- Folklor & Bellek -->
+          <div class="p-4 bg-stone-50 rounded-xl border border-stone-200">
+            <div class="flex items-center space-x-2 text-purple-700 font-bold text-sm mb-3">
+              <i class="fa-solid fa-microphone-lines"></i>
+              <span>04. Folklor & Hafıza</span>
+            </div>
+            <ul class="text-xs space-y-2 text-stone-700">
+              <li class="hover:text-amber-700">• 01. Bozlak & Müzik Antropolojisi</li>
+              <li class="hover:text-amber-700">• 02. Toponimi & Köy Monografileri</li>
+              <li class="hover:text-amber-700">• 03. Yerel Sözlük & Atasözleri</li>
+              <li class="hover:text-amber-700">• 04. Ağıtlar ve Destanlar</li>
+              <li class="hover:text-amber-700">• 05. Kaman Divânı & Şiir</li>
+              <li class="hover:text-amber-700">• 06. Mutfak & Gastronomi</li>
+              <li class="hover:text-amber-700">• 07. Halk Hekimliği</li>
+              <li class="hover:text-amber-700 font-semibold text-amber-800">• 08. Abdal Ocakları (Yeni)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. BOZLAK & SÖZLÜ BELLEK SEKMESİ -->
+    <section id="bozlak-view" class="tab-content hidden">
+      <div class="bg-white rounded-2xl border border-stone-200 p-6 shadow-sm">
+        <h2 class="text-xl font-bold text-stone-900 mb-2 flex items-center">
+          <i class="fa-solid fa-guitar text-amber-700 mr-2.5"></i>
+          Kırşehir-Kaman Abdal Müzik Ekolü ve Bozlak Matrisi
+        </h2>
+        <p class="text-xs text-stone-500 mb-6">UNESCO Tescilli Müzik Havzası Perde Düzenleri ve İcra Teknikleri</p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="p-4 bg-stone-50 rounded-xl border border-stone-200">
+            <h3 class="font-bold text-stone-900 text-sm mb-2">1. Garip Ayağı (Bozlak Düzeni)</h3>
+            <p class="text-xs text-stone-600 mb-3">
+              Alt Tel: <b>Re (D)</b> | Orta Tel: <b>Sol (G)</b> | Üst Tel: <b>Do (C) / La (A)</b>
+            </p>
+            <div class="text-xs text-stone-700 bg-white p-3 rounded-lg border border-stone-200 font-mono">
+              Re - Mi♭2 (Segâh) - Fa - Sol - La - Si♭ - Do - Re'
+            </div>
+            <p class="text-[11px] text-stone-500 mt-2">
+              Karakter: Yüksek perdeli göğüs avazı, gırtlak trilleri ve serbest ritim (rubato).
+            </p>
+          </div>
+
+          <div class="p-4 bg-stone-50 rounded-xl border border-stone-200">
+            <h3 class="font-bold text-stone-900 text-sm mb-2">2. Üstatlar ve Ekoller</h3>
+            <ul class="text-xs space-y-2 text-stone-700">
+              <li>• <b>Muharrem Ertaş:</b> Kadim avaz ve ağır bozlak kutbu.</li>
+              <li>• <b>Neşet Ertaş:</b> Garip mahlası, bağlama virtüözitesi ve evrensel şiir.</li>
+              <li>• <b>Çekiç Ali:</b> Zurna ve hızlı bağlama tezene tavrı ustası.</li>
+              <li>• <b>Hacı Taşan:</b> Keskin-Kaman hattı kırık hava ve ağıt repertuarı.</li>
+            </ul>
+          </div>
+
+          <div class="p-4 bg-stone-50 rounded-xl border border-stone-200">
+            <h3 class="font-bold text-stone-900 text-sm mb-2">3. Tipik Düğün ve Meclis Dizisi</h3>
+            <ol class="text-xs space-y-1.5 text-stone-700 list-decimal list-inside">
+              <li>Cuma İkindisi: Bayrak Kaldırma & Karşılama</li>
+              <li>Cuma Gecesi: Muhabbet Meclisi & Ağır Bozlaklar</li>
+              <li>Cumartesi: Kına Havaları & Gelin Ağlatma</li>
+              <li>Pazar: Güreş Havaları & Gelin Uğurlama Peşrevi</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. KAMAN CEVİZİ FENOLOJİ TAKVİMİ -->
+    <section id="walnut-view" class="tab-content hidden">
+      <div class="bg-white rounded-2xl border border-stone-200 p-6 shadow-sm">
+        <h2 class="text-xl font-bold text-stone-900 mb-2 flex items-center">
+          <i class="fa-solid fa-seedling text-emerald-700 mr-2.5"></i>
+          Kaman Cevizi Yıllık Fenoloji ve Agronomi Takvimi
+        </h2>
+        <p class="text-xs text-stone-500 mb-6">İç Anadolu Karasal İkliminde Don Risk Yönetimi ve Bakım Matrisi</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs">
+          <div class="p-4 bg-stone-50 rounded-xl border-t-4 border-blue-500">
+            <span class="font-bold text-stone-800 text-sm block mb-1">Kış Dinlenmesi</span>
+            <span class="text-stone-500 block mb-2">Aralık - Şubat</span>
+            <p class="text-stone-600">Soğuklama ihtiyacı (800-1200 saat < 7°C). Şekil ve aralama budaması.</p>
+          </div>
+          <div class="p-4 bg-stone-50 rounded-xl border-t-4 border-emerald-500">
+            <span class="font-bold text-stone-800 text-sm block mb-1">Uyanma & Çiçeklenme</span>
+            <span class="text-stone-500 block mb-2">Mart - Mayıs</span>
+            <p class="text-stone-600">İlkbahar geç donlarına karşı rüzgâr pervanesi ve dumanlama tedbirleri. Tozlaşma takibi.</p>
+          </div>
+          <div class="p-4 bg-stone-50 rounded-xl border-t-4 border-amber-500">
+            <span class="font-bold text-stone-800 text-sm block mb-1">İç Dolumu & Sulama</span>
+            <span class="text-stone-500 block mb-2">Haziran - Ağustos</span>
+            <p class="text-stone-600">Düzenli damla sulama, iç kurdu mücadelesi ve potasyumlu yaprak gübrelemesi.</p>
+          </div>
+          <div class="p-4 bg-stone-50 rounded-xl border-t-4 border-purple-500">
+            <span class="font-bold text-stone-800 text-sm block mb-1">Hasat & Kurutma</span>
+            <span class="text-stone-500 block mb-2">Eylül - Ekim</span>
+            <p class="text-stone-600">Yeşil kabuk çatlaması sonrası silkme, mekanik soyma ve gölgede %8-10 nem seviyesine kurutma.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Alt Bilgi (Footer) -->
+  <footer class="bg-stone-900 text-stone-400 py-6 border-t border-stone-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="font-semibold text-stone-300">Bozkır Havzası Kaman Araştırma ve Açık Veri İnisiyatifi</p>
+        <p class="text-stone-500 mt-0.5">Lisans: CC BY-SA 4.0 Uluslararası Açık Erişim</p>
+      </div>
+      <div class="flex items-center space-x-4 text-stone-400">
+        <a href="https://github.com/arch-yunus/bozkir-havzasi-kaman" class="hover:text-amber-400"><i class="fa-brands fa-github mr-1"></i> GitHub Deposu</a>
+        <span>•</span>
+        <a href="BIBLIOGRAPHY.md" class="hover:text-amber-400">Bibliyografya</a>
+        <span>•</span>
+        <a href="CONTRIBUTING.md" class="hover:text-amber-400">Katkı Kılavuzu</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CBS Verileri ve JavaScript Motoru -->
+  <script>
+    // GeoJSON Verisi (Yerleşik)
+    const geojsonData = {
+      "type": "FeatureCollection",
+      "features": [
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7236, 39.3582] }, "properties": { "id": "SIT-01", "name": "Kaman-Kalehöyük", "category": "Arkeolojik Sit", "period": "MÖ 2800 - MS 17. yy", "elevation_m": 1015, "village": "Çağırkan", "desc": "1986'dan beri JIAA tarafından kazılan 4 kültür katmanlı stratigrafik merkez höyük." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7258, 39.3595] }, "properties": { "id": "SIT-02", "name": "Mikasanomiya Anı Bahçesi", "category": "Doğal / Ekolojik", "period": "1993-2010", "elevation_m": 1020, "village": "Çağırkan", "desc": "Prens Takahito Mikasa anısına kurulan Japon gezinti bahçesi." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7242, 39.3588] }, "properties": { "id": "SIT-03", "name": "Kaman Kalehöyük Arkeoloji Müzesi", "category": "Doğal / Ekolojik", "period": "2010", "elevation_m": 1018, "village": "Çağırkan", "desc": "Höyük formunda yeşil çatılı uluslararası müze kompleksi." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.4385, 39.6012] }, "properties": { "id": "SIT-04", "name": "Büklükale", "category": "Arkeolojik Sit", "period": "Hitit - Demir Çağı", "elevation_m": 820, "village": "Köprüköy Sınırı", "desc": "Kızılırmak nehir geçidini (Çeşnigir Boğazı) denetleyen stratejik Hitit garnizonu." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7012, 39.2945] }, "properties": { "id": "SIT-05", "name": "Yassıhöyük", "category": "Arkeolojik Sit", "period": "Erken Tunç - Frig", "elevation_m": 980, "village": "Yassıhöyük", "desc": "Savcılı vadisi girişini kontrol eden bölgesel Demir Çağı höyüğü." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.8214, 39.4125] }, "properties": { "id": "SIT-06", "name": "Baranlı Dağı Zirvesi & Gözetleme Kulesi", "category": "Doğal / Ekolojik", "period": "Antik - Ortaçağ", "elevation_m": 1677, "village": "Baranlı", "desc": "Kaman havzasının 1677m zirvesi; antik sinyal/yangın kulesi mevkii." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.5823, 39.2456] }, "properties": { "id": "SIT-07", "name": "Savcılı Büyükoba Sahili", "category": "Doğal / Ekolojik", "period": "Tarihsel İskân", "elevation_m": 860, "village": "Savcılı Büyükoba", "desc": "Hirfanlı Baraj Gölü sahil koyu ve mikroklima bağcılık havzası." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7845, 39.3890] }, "properties": { "id": "SIT-08", "name": "Kargın Meşesi Tümülüsleri", "category": "Tümülüs", "period": "Geç Frig (MÖ 7-6. yy)", "elevation_m": 1130, "village": "Kargın Meşesi", "desc": "Baranlı yamaçlarına hâkim Frig dönemi anıtsal yığma mezarları." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7265, 39.3610] }, "properties": { "id": "SIT-09", "name": "Çağırkan Baba Türbesi", "category": "Köy / İskân", "period": "Selçuklu / Beylikler", "elevation_m": 1025, "village": "Çağırkan", "desc": "Horasan erenlerinden Çağırkan Baba'nın tarihî zaviye ve türbesi." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7210, 39.3620] }, "properties": { "id": "SIT-10", "name": "Ömerhacılı Höyüğü", "category": "Arkeolojik Sit", "period": "Tunç Çağı - Roma", "elevation_m": 995, "village": "Ömerhacılı", "desc": "Verimli tarım depresyonunda yer alan çok katmanlı höyük yerleşimi." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7225, 39.3560] }, "properties": { "id": "SIT-11", "name": "Kaman Atatürk Karşılama Mevkii (1919)", "category": "Köy / İskân", "period": "24-25 Aralık 1919", "elevation_m": 1005, "village": "Kaman Merkez", "desc": "Heyet-i Temsiliye'nin Kaman'da Seymenler tarafından karşılandığı tarihî mevki." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.6420, 39.3210] }, "properties": { "id": "SIT-12", "name": "Çadırlıhacıbayram Tarihî Çeşmesi", "category": "Köy / İskân", "period": "Osmanlı (18. yy)", "elevation_m": 960, "village": "Çadırlıhacıbayram", "desc": "Konar-göçer oymakların yerleşik iskâna geçişini simgeleyen kitabeli çeşme." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7530, 39.4210] }, "properties": { "id": "SIT-13", "name": "Kurancılı Beldesi & Anıtlar", "category": "Köy / İskân", "period": "Türkmen İskânı", "elevation_m": 1080, "village": "Kurancılı", "desc": "Baranlı Dağı eteklerinde kurulmuş kadim Türkmen beldesi." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.5210, 39.2710] }, "properties": { "id": "SIT-14", "name": "Hirfanlı Barajı HES Gövdesi", "category": "Doğal / Ekolojik", "period": "1953-1959", "elevation_m": 850, "village": "Hirfanlı", "desc": "Kızılırmak üzerindeki ilk büyük baraj gövdesi ve hidroelektrik santrali." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.6120, 39.3850] }, "properties": { "id": "SIT-15", "name": "Bayındır Köyü Tümülüsü", "category": "Tümülüs", "period": "Hellenistik Çağ", "elevation_m": 1030, "village": "Bayındır", "desc": "Oğuzların Bayındır boyunun adını taşıyan köy sırtındaki sanduka mezar." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.6890, 39.4420] }, "properties": { "id": "SIT-16", "name": "Tatık Kaya Mezarları ve Manastır", "category": "Tümülüs", "period": "Roma - Bizans", "elevation_m": 1110, "village": "Tatık", "desc": "Tüf anakayaya oyulmuş arcosoliumlu mezar odaları ve keşiş hücreleri." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.5640, 39.2150] }, "properties": { "id": "SIT-17", "name": "Savcılı Bağbaşı Tarihî Bağ Terasları", "category": "Köy / İskân", "period": "Geleneksel Miras", "elevation_m": 870, "village": "Savcılı Bağbaşı", "desc": "Geleneksel kuru taş teraslı yamaç bağcılığı ve pekmezlik üzüm ocakları." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7910, 39.3120] }, "properties": { "id": "SIT-18", "name": "İkizler Höyüğü", "category": "Arkeolojik Sit", "period": "Tunç ve Demir Çağı", "elevation_m": 990, "village": "İkizler", "desc": "Kaman güneydoğu ovasında yer alan ikiz tepe höyük oluşumu." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7350, 39.3520] }, "properties": { "id": "SIT-19", "name": "Kaman Ceviz Genetik Bahçesi", "category": "Doğal / Ekolojik", "period": "1990 - Günümüz", "elevation_m": 1010, "village": "Kaman Merkez", "desc": "Kaman-1, Kaman-2 ve Kaman-5 tescilli çeşitlerinin koruma ve damızlık parseli." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.6300, 39.4600] }, "properties": { "id": "SIT-20", "name": "Demirli Köyü Su Değirmenleri", "category": "Köy / İskân", "period": "Geç Osmanlı", "elevation_m": 1050, "village": "Demirli", "desc": "Değirmendere vadisinde su çarkı ile çalışan taş un değirmenleri." } }
+      ]
+    };
+
+    // Harita Başlatma
+    let map = L.map('map').setView([39.3582, 33.7236], 11);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap Katılımcıları | Bozkır Havzası Kaman'
+    }).addTo(map);
+
+    let markers = [];
+
+    function getMarkerColor(category) {
+      if (category.includes('Arkeolojik')) return '#dc2626'; // Kırmızı
+      if (category.includes('Tümülüs')) return '#9333ea'; // Mor
+      if (category.includes('Doğal')) return '#16a34a'; // Yeşil
+      return '#d97706'; // Amber
+    }
+
+    function renderMarkers(features) {
+      markers.forEach(m => map.removeLayer(m));
+      markers = [];
+
+      const listContainer = document.getElementById('pointsList');
+      listContainer.innerHTML = '';
+
+      features.forEach(f => {
+        const p = f.properties;
+        const coords = f.geometry.coordinates;
+        const color = getMarkerColor(p.category);
+
+        const circle = L.circleMarker([coords[1], coords[0]], {
+          radius: 8,
+          fillColor: color,
+          color: '#ffffff',
+          weight: 2,
+          opacity: 1,
+          fillOpacity: 0.85
+        }).addTo(map);
+
+        circle.bindPopup(`
+          <div class="p-2">
+            <span class="text-[10px] font-bold uppercase tracking-wider text-amber-700 block">${p.id} • ${p.category}</span>
+            <h4 class="text-sm font-bold text-stone-900 mt-0.5">${p.name}</h4>
+            <p class="text-xs text-stone-600 mt-1">${p.desc}</p>
+            <div class="mt-2 text-[11px] text-stone-500 flex justify-between border-t pt-1">
+              <span><b>Rakım:</b> ${p.elevation_m}m</span>
+              <span><b>Mevkii:</b> ${p.village}</span>
+            </div>
+          </div>
+        `);
+
+        markers.push(circle);
+
+        // Liste Kartı Ekle
+        const card = document.createElement('div');
+        card.className = "p-2.5 bg-stone-50 hover:bg-stone-100 rounded-xl border border-stone-200 cursor-pointer transition flex items-start space-x-2";
+        card.onclick = () => {
+          map.setView([coords[1], coords[0]], 14);
+          circle.openPopup();
+        };
+        card.innerHTML = `
+          <div class="w-2.5 h-2.5 rounded-full mt-1 flex-shrink-0" style="background-color: ${color}"></div>
+          <div class="flex-1">
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-stone-800">${p.name}</span>
+              <span class="text-[10px] text-stone-400">${p.elevation_m}m</span>
+            </div>
+            <p class="text-[11px] text-stone-500 mt-0.5">${p.category} • ${p.village}</p>
+          </div>
+        `;
+        listContainer.appendChild(card);
+      });
+
+      document.getElementById('activePointsCount').textContent = `${features.length} Nokta Gösteriliyor`;
+    }
+
+    function filterMap() {
+      const selected = document.getElementById('categoryFilter').value;
+      let filtered = geojsonData.features;
+      if (selected !== 'ALL') {
+        filtered = geojsonData.features.filter(f => f.properties.category.includes(selected));
+      }
+      renderMarkers(filtered);
+    }
+
+    function searchPoints() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const filtered = geojsonData.features.filter(f => {
+        const p = f.properties;
+        return p.name.toLowerCase().includes(query) ||
+               p.village.toLowerCase().includes(query) ||
+               p.category.toLowerCase().includes(query) ||
+               p.period.toLowerCase().includes(query);
+      });
+      renderMarkers(filtered);
+    }
+
+    function resetMapView() {
+      map.setView([39.3582, 33.7236], 11);
+      document.getElementById('categoryFilter').value = 'ALL';
+      document.getElementById('searchInput').value = '';
+      renderMarkers(geojsonData.features);
+    }
+
+    // Sekme Değiştirme
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-amber-600', 'text-white');
+        btn.classList.add('text-stone-300');
+      });
+
+      const activeNav = document.getElementById('nav-' + tabId);
+      if (activeNav) {
+        activeNav.classList.add('bg-amber-600', 'text-white');
+        activeNav.classList.remove('text-stone-300');
+      }
+
+      if (tabId === 'map-view') {
+        setTimeout(() => map.invalidateSize(), 200);
+      }
+    }
+
+    // İlk Yükleme
+    window.onload = () => {
+      renderMarkers(geojsonData.features);
+
+      // Chart.js Grafikleri
+      const ctx1 = document.getElementById('elevationChart').getContext('2d');
+      new Chart(ctx1, {
+        type: 'bar',
+        data: {
+          labels: ['800-999m (Vadi/Göl)', '1000-1199m (Plato)', '1200m+ (Dağ/Yayla)'],
+          datasets: [{
+            label: 'Yerleşim Sayısı',
+            data: [10, 9, 1],
+            backgroundColor: ['#3b82f6', '#d97706', '#10b981']
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } }
+        }
+      });
+
+      const ctx2 = document.getElementById('productChart').getContext('2d');
+      new Chart(ctx2, {
+        type: 'doughnut',
+        data: {
+          labels: ['Ceviz', 'Hayvancılık', 'Hububat/Buğday', 'Bağcılık/Üzüm', 'Diğer/Balık'],
+          datasets: [{
+            data: [9, 5, 7, 4, 3],
+            backgroundColor: ['#16a34a', '#d97706', '#eab308', '#9333ea', '#0284c7']
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { position: 'right' } }
+        }
+      });
+    };
+  </script>
+</body>
+</html>

@@ -205,7 +205,7 @@ Açık kaynak CBS veri setimizde (`sit_alanlari.geojson` ve `kaman_koyler_ve_nuf
 
 ---
 
-## 📂 Dizin Yapısı ve Belge Mimarisi (29 Bölüm)
+## 📂 Dizin Yapısı ve Belge Mimarisi (30 Bölüm)
 
 ```text
 bozkir-havzasi-kaman/
@@ -242,7 +242,8 @@ bozkir-havzasi-kaman/
 │   ├── 06_kaman_mutfagi_ve_gastronomi.md        # Geleneksel yemekler, cevizli çörek ve bağcılık mutfağı
 │   ├── 07_halk_hekimligi_ve_etnobotanik.md      # Şifalı step bitkileri, ocaklık ve sınıkçılık geleneği
 │   ├── 08_kaman_abdal_ocaklari_ve_muharrem_ertas.md # Muharrem Ertaş ekolü, soy kütükleri ve icra tavrı
-│   └── 09_kaman_yetistirdigi_sahsiyetler_ve_biyografiler.md # Âşık Said, Seyfullah, Çelebi Cemalettin biyografileri
+│   ├── 09_kaman_yetistirdigi_sahsiyetler_ve_biyografiler.md # Âşık Said, Seyfullah, Çelebi Cemalettin biyografileri
+│   └── 10_turk_edebiyatinda_kaman_ve_bozkir_metinleri.md # Tanpınar, Yaşar Kemal, Âşık Paşa, Bedri Rahmi edebiyat antolojisi
 ├── 05_gorsel_ve_kartografik_arsiv/
 │   ├── haritalar/
 │   │   ├── README.md                            # Kartografik kaynaklar ve GIS metodolojisi

@@ -69,6 +69,9 @@
         <button onclick="switchTab('map-view')" id="nav-map-view" class="tab-btn px-3 py-1.5 rounded-md text-sm font-medium transition bg-amber-600 text-white">
           <i class="fa-solid fa-map-location-dot mr-1.5"></i> CBS Harita
         </button>
+        <button onclick="switchTab('japan-view')" id="nav-japan-view" class="tab-btn px-3 py-1.5 rounded-md text-sm font-medium transition hover:bg-stone-700/60 text-stone-300">
+          <i class="fa-solid fa-torii-gate mr-1.5 text-red-400"></i> Japon Bahçesi
+        </button>
         <button onclick="switchTab('analytics-view')" id="nav-analytics-view" class="tab-btn px-3 py-1.5 rounded-md text-sm font-medium transition hover:bg-stone-700/60 text-stone-300">
           <i class="fa-solid fa-chart-pie mr-1.5"></i> İstatistik & Grafikler
         </button>
@@ -76,7 +79,7 @@
           <i class="fa-solid fa-book-open mr-1.5"></i> Monografi Külliyatı
         </button>
         <button onclick="switchTab('bozlak-view')" id="nav-bozlak-view" class="tab-btn px-3 py-1.5 rounded-md text-sm font-medium transition hover:bg-stone-700/60 text-stone-300">
-          <i class="fa-solid fa-guitar mr-1.5"></i> Bozlak & Sözlü Bellek
+          <i class="fa-solid fa-guitar mr-1.5"></i> Bozlak & Hafıza
         </button>
         <button onclick="switchTab('walnut-view')" id="nav-walnut-view" class="tab-btn px-3 py-1.5 rounded-md text-sm font-medium transition hover:bg-stone-700/60 text-stone-300">
           <i class="fa-solid fa-seedling mr-1.5"></i> Kaman Cevizi
@@ -94,6 +97,7 @@
   <!-- Mobil Sekme Menüsü -->
   <div class="md:hidden bg-stone-800 text-stone-300 flex overflow-x-auto px-2 py-2 space-x-2 border-b border-stone-700">
     <button onclick="switchTab('map-view')" class="tab-btn px-3 py-1 bg-amber-600 text-white rounded text-xs whitespace-nowrap"><i class="fa-solid fa-map"></i> Harita</button>
+    <button onclick="switchTab('japan-view')" class="tab-btn px-3 py-1 rounded text-xs whitespace-nowrap text-red-300"><i class="fa-solid fa-torii-gate"></i> Japon Bahçesi</button>
     <button onclick="switchTab('analytics-view')" class="tab-btn px-3 py-1 rounded text-xs whitespace-nowrap"><i class="fa-solid fa-chart-pie"></i> İstatistik</button>
     <button onclick="switchTab('monograph-view')" class="tab-btn px-3 py-1 rounded text-xs whitespace-nowrap"><i class="fa-solid fa-book"></i> Monografi</button>
     <button onclick="switchTab('bozlak-view')" class="tab-btn px-3 py-1 rounded text-xs whitespace-nowrap"><i class="fa-solid fa-guitar"></i> Bozlak</button>
@@ -174,7 +178,74 @@
       </div>
     </section>
 
-    <!-- 2. İSTATİSTİK & GRAFİKLER SEKMESİ -->
+    <!-- 2. JAPON BAHÇESİ (MİKASANOMİYA) ÖZEL SEKMESİ -->
+    <section id="japan-view" class="tab-content hidden">
+      <div class="bg-white rounded-2xl border border-stone-200 p-6 shadow-sm space-y-6">
+        
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-stone-100 pb-5">
+          <div>
+            <div class="inline-flex items-center space-x-2 text-xs font-bold text-red-600 bg-red-50 px-3 py-1 rounded-full mb-2">
+              <i class="fa-solid fa-torii-gate"></i>
+              <span>Japonya Dışındaki En Büyük Botanik Japon Bahçelerinden Biri</span>
+            </div>
+            <h2 class="text-2xl font-bold text-stone-900">Mikasanomiya Anı Bahçesi (Kaman Japon Parkı)</h2>
+            <p class="text-xs text-stone-500 mt-1">Çağırkan Köyü • JIAA Enstitüsü Yerleşkesi • 22.000 m² Alan • 1993-2010</p>
+          </div>
+          <button onclick="goToSiteOnMap(39.3595, 33.7258)" class="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold rounded-xl transition flex items-center shadow-sm">
+            <i class="fa-solid fa-location-crosshairs mr-2"></i> Haritada Konumu Göster
+          </button>
+        </div>
+
+        <!-- Öne Çıkan Özellikler Kartları -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-4 bg-stone-50 rounded-xl border border-stone-200">
+            <div class="text-red-700 text-lg mb-2"><i class="fa-solid fa-seedling"></i></div>
+            <h3 class="font-bold text-stone-900 text-sm">Bozkırda Botanik Mucize</h3>
+            <p class="text-xs text-stone-600 mt-1">İç Anadolu'nun -20°C kış ve kavurucu yaz iklimine adapte edilmiş Sakura (Japon Kirazı), Japon Akçaağacı ve bodur dağ çamları.</p>
+          </div>
+          <div class="p-4 bg-stone-50 rounded-xl border border-stone-200">
+            <div class="text-blue-700 text-lg mb-2"><i class="fa-solid fa-water"></i></div>
+            <h3 class="font-bold text-stone-900 text-sm">Koi Balıkları & Ekolojik Gölet</h3>
+            <p class="text-xs text-stone-600 mt-1">Kapalı devre biyolojik filtreleme ile arıtılan nilüferli şelale sistemi ve yüzlerce renkli Japon sazanı (Nishikigoi).</p>
+          </div>
+          <div class="p-4 bg-stone-50 rounded-xl border border-stone-200">
+            <div class="text-amber-700 text-lg mb-2"><i class="fa-solid fa-mountain"></i></div>
+            <h3 class="font-bold text-stone-900 text-sm">Shakkei (Ödünç Manzara)</h3>
+            <p class="text-xs text-stone-600 mt-1">Baranlı Dağı'nın (1677m) siluetini arka plan ufku olarak kullanan ve doğayla bütünleşen Kaiyū-shiki gezinti mimarisi.</p>
+          </div>
+        </div>
+
+        <!-- Felsefi Öğeler & Ziyaretçi Rehberi -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-5 bg-gradient-to-br from-stone-900 to-stone-800 text-white rounded-xl shadow-sm">
+            <h3 class="text-sm font-bold text-amber-400 mb-3 flex items-center">
+              <i class="fa-solid fa-yin-yang mr-2"></i> Bahçenin Felsefi ve Sembolik Yapısı
+            </h3>
+            <ul class="text-xs space-y-2.5 text-stone-200">
+              <li>• <b>Taiko-bashi (Kırmızı Ahşap Köprü):</b> Dünyevi gailelerden manevi arınmaya geçiş.</li>
+              <li>• <b>Tsuru & Kame Adaları:</b> Turna (1.000 yıl) ve Kaplumbağa (10.000 yıl) adacıklarıyla ebediyet simgesi.</li>
+              <li>• <b>Tōrō (Taş Fenerler):</b> Karanlıkta ruhu aydınlatan Zen estetiği.</li>
+              <li>• <b>Doğu-Batı Sentezi:</b> 4000 yıllık Kalehöyük kazı alanıyla iç içe meditatif vaha.</li>
+            </ul>
+          </div>
+
+          <div class="p-5 bg-amber-50/60 border border-amber-200 rounded-xl text-stone-800">
+            <h3 class="text-sm font-bold text-amber-900 mb-3 flex items-center">
+              <i class="fa-solid fa-calendar-check mr-2"></i> Ziyaret ve Fotoğraf Sezonu Rehberi
+            </h3>
+            <ul class="text-xs space-y-2 text-stone-700">
+              <li>🌸 <b>Nisan - Mayıs (İlkbahar):</b> Sakura (Japon Kirazı) ağaçlarının pembe-beyaz çiçek açma şöleni.</li>
+              <li>🍁 <b>Ekim - Kasım (Sonbahar):</b> Japon akçaağaçlarının gölet aynasında alev kırmızısı ve sarı yaprak dansı.</li>
+              <li>❄️ <b>Kış (Aralık - Şubat):</b> Kar altında taş fenerler ve donmuş göletle Zen dinginliği.</li>
+              <li>🏛️ <b>Müze Kombini:</b> Yeşil çatılı Kaman Kalehöyük Arkeoloji Müzesi ile birlikte gezilebilir.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. İSTATİSTİK & GRAFİKLER SEKMESİ -->
     <section id="analytics-view" class="tab-content hidden">
       <div class="space-y-6">
         
@@ -228,7 +299,7 @@
       </div>
     </section>
 
-    <!-- 3. MONOGRAFİ KÜLLİYATI SEKMESİ -->
+    <!-- 4. MONOGRAFİ KÜLLİYATI SEKMESİ -->
     <section id="monograph-view" class="tab-content hidden">
       <div class="bg-white rounded-2xl border border-stone-200 p-6 shadow-sm">
         <h2 class="text-xl font-bold text-stone-900 mb-4 flex items-center">
@@ -236,7 +307,7 @@
           Monografi Bölüm Rehberi ve Araştırma Kütüphanesi
         </h2>
         <p class="text-sm text-stone-600 mb-6 leading-relaxed">
-          Kaman mikro-havzasını konu alan 4 ana araştırma disiplini ve 28 akademik bölümden oluşan açık kaynak monografi koleksiyonu.
+          Kaman mikro-havzasını konu alan 4 ana araştırma disiplini ve 29 akademik bölümden oluşan açık kaynak monografi koleksiyonu.
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -252,10 +323,10 @@
               <li class="hover:text-amber-700">• 02. JIAA Enstitü Tarihçesi</li>
               <li class="hover:text-amber-700">• 03. Büklükale & Yassıhöyük</li>
               <li class="hover:text-amber-700">• 04. Arkeometrik Veriler</li>
-              <li class="hover:text-amber-700">• 05. Japon Bahçesi Ekolojisi</li>
+              <li class="hover:text-amber-700 font-semibold text-red-800">• 05. Japon Bahçesi Ekolojisi</li>
               <li class="hover:text-amber-700">• 06. Müze Kataloğu</li>
               <li class="hover:text-amber-700">• 07. Demir Çağı Metalurjisi</li>
-              <li class="hover:text-amber-700 font-semibold text-amber-800">• 08. Bölgesel Tümülüsler (Yeni)</li>
+              <li class="hover:text-amber-700">• 08. Bölgesel Tümülüsler</li>
             </ul>
           </div>
 
@@ -271,7 +342,7 @@
               <li class="hover:text-amber-700">• 03. Su & Kızılırmak Havzası</li>
               <li class="hover:text-amber-700">• 04. Endemik Flora ve Step</li>
               <li class="hover:text-amber-700">• 05. İklim Krizi & Hidroloji</li>
-              <li class="hover:text-amber-700 font-semibold text-amber-800">• 06. Baranlı Jeolojisi (Yeni)</li>
+              <li class="hover:text-amber-700">• 06. Baranlı Jeolojisi</li>
             </ul>
           </div>
 
@@ -288,7 +359,7 @@
               <li class="hover:text-amber-700">• 04. Millî Mücadele Dönemi</li>
               <li class="hover:text-amber-700">• 05. Seyyahlar ve Salnameler</li>
               <li class="hover:text-amber-700">• 06. Nüfus Defterleri (1831-45)</li>
-              <li class="hover:text-amber-700 font-semibold text-amber-800">• 07. Atatürk Kaman Günlüğü (Yeni)</li>
+              <li class="hover:text-amber-700">• 07. Atatürk Kaman Günlüğü</li>
             </ul>
           </div>
 
@@ -306,7 +377,8 @@
               <li class="hover:text-amber-700">• 05. Kaman Divânı & Şiir</li>
               <li class="hover:text-amber-700">• 06. Mutfak & Gastronomi</li>
               <li class="hover:text-amber-700">• 07. Halk Hekimliği</li>
-              <li class="hover:text-amber-700 font-semibold text-amber-800">• 08. Abdal Ocakları (Yeni)</li>
+              <li class="hover:text-amber-700">• 08. Abdal Ocakları</li>
+              <li class="hover:text-amber-700 font-semibold text-purple-800">• 09. Yetiştirdiği Büyükler</li>
             </ul>
           </div>
 
@@ -314,7 +386,7 @@
       </div>
     </section>
 
-    <!-- 4. BOZLAK & SÖZLÜ BELLEK SEKMESİ -->
+    <!-- 5. BOZLAK & SÖZLÜ BELLEK SEKMESİ -->
     <section id="bozlak-view" class="tab-content hidden">
       <div class="bg-white rounded-2xl border border-stone-200 p-6 shadow-sm">
         <h2 class="text-xl font-bold text-stone-900 mb-2 flex items-center">
@@ -360,7 +432,7 @@
       </div>
     </section>
 
-    <!-- 5. KAMAN CEVİZİ FENOLOJİ TAKVİMİ -->
+    <!-- 6. KAMAN CEVİZİ FENOLOJİ TAKVİMİ -->
     <section id="walnut-view" class="tab-content hidden">
       <div class="bg-white rounded-2xl border border-stone-200 p-6 shadow-sm">
         <h2 class="text-xl font-bold text-stone-900 mb-2 flex items-center">
@@ -420,7 +492,7 @@
       "type": "FeatureCollection",
       "features": [
         { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7236, 39.3582] }, "properties": { "id": "SIT-01", "name": "Kaman-Kalehöyük", "category": "Arkeolojik Sit", "period": "MÖ 2800 - MS 17. yy", "elevation_m": 1015, "village": "Çağırkan", "desc": "1986'dan beri JIAA tarafından kazılan 4 kültür katmanlı stratigrafik merkez höyük." } },
-        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7258, 39.3595] }, "properties": { "id": "SIT-02", "name": "Mikasanomiya Anı Bahçesi", "category": "Doğal / Ekolojik", "period": "1993-2010", "elevation_m": 1020, "village": "Çağırkan", "desc": "Prens Takahito Mikasa anısına kurulan Japon gezinti bahçesi." } },
+        { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7258, 39.3595] }, "properties": { "id": "SIT-02", "name": "Mikasanomiya Anı Bahçesi (Japon Bahçesi)", "category": "Doğal / Ekolojik", "period": "1993-2010", "elevation_m": 1020, "village": "Çağırkan", "desc": "Prens Takahito Mikasa anısına kurulan, 22.000 m² alanıyla Japonya dışındaki en büyük Japon bahçelerinden biri." } },
         { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7242, 39.3588] }, "properties": { "id": "SIT-03", "name": "Kaman Kalehöyük Arkeoloji Müzesi", "category": "Doğal / Ekolojik", "period": "2010", "elevation_m": 1018, "village": "Çağırkan", "desc": "Höyük formunda yeşil çatılı uluslararası müze kompleksi." } },
         { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.4385, 39.6012] }, "properties": { "id": "SIT-04", "name": "Büklükale", "category": "Arkeolojik Sit", "period": "Hitit - Demir Çağı", "elevation_m": 820, "village": "Köprüköy Sınırı", "desc": "Kızılırmak nehir geçidini (Çeşnigir Boğazı) denetleyen stratejik Hitit garnizonu." } },
         { "type": "Feature", "geometry": { "type": "Point", "coordinates": [33.7012, 39.2945] }, "properties": { "id": "SIT-05", "name": "Yassıhöyük", "category": "Arkeolojik Sit", "period": "Erken Tunç - Frig", "elevation_m": 980, "village": "Yassıhöyük", "desc": "Savcılı vadisi girişini kontrol eden bölgesel Demir Çağı höyüğü." } },
@@ -540,6 +612,19 @@
       document.getElementById('categoryFilter').value = 'ALL';
       document.getElementById('searchInput').value = '';
       renderMarkers(geojsonData.features);
+    }
+
+    function goToSiteOnMap(lat, lon) {
+      switchTab('map-view');
+      setTimeout(() => {
+        map.setView([lat, lon], 15);
+        markers.forEach(m => {
+          const pos = m.getLatLng();
+          if (Math.abs(pos.lat - lat) < 0.001 && Math.abs(pos.lng - lon) < 0.001) {
+            m.openPopup();
+          }
+        });
+      }, 300);
     }
 
     function switchTab(tabId) {
